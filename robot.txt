@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: hackingChallenges.html
+Disallow: about.html
+
+Sitemap: http://easiersaidthanrun.com/sitemap.xml
