@@ -1,0 +1,72 @@
+.img-row{
+text-align:center;
+padding-top:40px;
+padding-bottom: 15px;
+}
+p.datetime {
+    margin-bottom: 20px;
+}
+
+.comments{
+margin-left: 4%;
+}
+.comments-list{
+list-style:none;
+}
+
+.comment-author{
+text-transform: uppercase;
+margin: 0 2px 20px 0;
+display: inline-block;
+}
+.comment-author, .comment-meta{
+color: #cdd6db;
+font-weight:bold;
+}
+
+.section-head { 
+     border-color: #eee;
+    border-bottom-width: 2px;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 36px;
+	padding-left: 10px;
+	background: #52ACBF;
+	color:white;
+}
+form > input.comment-submit{
+background: #0E5B8E;
+color:white;
+}
+.form-row{
+margin-bottom:25px;
+}
+#nameInput, #emailInput, #messageInput{
+margin-bottom: 25px;
+}
+.skeleton-img{
+display: block;
+max-width: 100%;
+height: auto;
+margin-left:4%;
+}
+
+/* Mobile first queries */
+
+/* Mobile */
+@media (min-width: 300px and max-width: 550px) {
+.skeleton-img{margin-left:0%;}
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
