@@ -23,8 +23,16 @@ div.five.columns > img {
 padding: 25px 10px 0px 10px;
 }
 div.seven.columns{
-padding: 15px;
+padding: 20px 0 0 15px;
 }
+div.seven.columns > h4{
+margin-bottom:3px;
+}
+p.datetime{
+margin-bottom: 10px;
+}
+
+/* PAGINATION */
 .c-paginator {
     margin: 2.5rem 0;
     text-align: center;
@@ -111,4 +119,10 @@ a {
     cursor: pointer;
     text-decoration: none;
     transition: all .3s ease-in-out;
+}
+/* END PAGINATION */
+
+.datetime{
+color: #cdd6db;
+display: block;
 }
