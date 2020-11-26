@@ -6,6 +6,13 @@ body {
     color: #211B24;
     text-align: left;
 }
+section{
+display:block;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+}
 .news-row{
 min-height:250px;
 border: 1px solid darkblue;
@@ -17,4 +24,91 @@ padding: 25px 10px 0px 10px;
 }
 div.seven.columns{
 padding: 15px;
+}
+.c-paginator {
+    margin: 2.5rem 0;
+    text-align: center;
+}
+dl, ol, ul {
+    line-height: 1.2;
+}
+ol, ul {
+    list-style: none;
+}
+@media screen and (min-width: 48em){
+.c-paginator li {
+    margin: .5rem .25rem;
+}
+}
+.c-paginator li {
+    display: inline-block;
+    margin: .5rem 0 0;
+    vertical-align: middle;
+}
+.c-paginator .c-current-page {
+    border: 1px solid #dce4e7;
+    color: #3c3d45;
+    font-weight: 700;
+    pointer-events: none;
+}
+.c-paginator a {
+    color: #057BDD;
+    font-size: .875rem;
+    font-weight: 700;
+}
+.c-paginator__button {
+    border: 1px solid #dce4e7;
+    border-radius: 30px;
+    color: #057BDD;
+    cursor: pointer;
+    display: inline-block;
+    font-size: .875rem;
+    font-weight: 700;
+    height: 50px;
+    padding: 11px;
+    text-align: center;
+    transition-duration: .4s;
+    transition-property: color,background-color;
+    width: 50px;
+    line-height: 28px;
+}
+a {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+        transition-property: all;
+        transition-duration: 0.3s;
+}
+a{
+padding: 0;
+border: 0;
+font-size: 100%;
+}
+    a {
+    background-color: transparent;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.c-paginator .c-next {
+    padding: 0 15px;
+    position: relative;
+}
+.c-paginator a {
+    color: #0172f0;
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+.c-paginator__text {
+    color: #0172f0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+a {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
 }
