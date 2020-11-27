@@ -74,7 +74,7 @@ body {
         text-decoration: none;
         position: relative;
         margin: auto; 
-        top: +25px;
+        top: +38px;
         font-size: 15px;
     }
       
@@ -84,8 +84,8 @@ body {
   
     .header .right{
         color: rgb(5, 66, 5); 
-        background-color: green;
-        border-radius: 40px;
+        background-color: rgb(2, 179, 2);
+        border-radius: 20px;
         padding: 10px; 
     }
     
@@ -140,11 +140,23 @@ footer {
 p.copyright {
     color: rgb(218, 218, 218);
     margin-top: 20px; 
+    margin-bottom: 0px; 
     text-align: center;
   }
 
+p.designed {
+    color: #FF859D; 
+    text-align: center;
+    font-size: 11px; 
+}
 
+footer a {
+    text-decoration: none;
+}
 
+footer p:hover {
+    color: white; 
+}
 
   /* SKÄRMANPASSNING */
   
