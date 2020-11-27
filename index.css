@@ -1,0 +1,204 @@
+/* @font-face {
+    font-family: 'elmessiri';
+    src:  url(./font/elmessiri-regular.otf) format(opentype);
+          font-weight: normal;
+          font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'elmessiri';
+    src:  url(./font/elmessiri-bold.otf) format(opentype);
+    font-weight: bold;
+    font-style: normal;
+  }
+*/
+
+body {
+    font-family: Inconsolata, monospace !important;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #211B24;
+    text-align: left;
+}
+
+
+
+    /* HEADERN*/
+  
+    .header {
+        height: 100px;
+        background-color: rgb(31, 28, 28);
+        color: white;
+        position: sticky;
+        top: 0;
+        z-index: 9;
+        margin: 0px 100px 0px 100px; 
+    }
+    
+    .header .desktopNav li.logo a {
+        background-image: url("/img/hackerbooklogo.jpg");
+        background-size: 130px;
+        border-radius: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        text-indent: -9999999px;
+        top: +10px;
+        height: 80px;
+        width: 80px;
+        z-index: 10;
+    } 
+      
+    .scrolled .header {
+        opacity: 1;
+        transition: opacity .2s;
+        background-color: black;
+    }
+      
+    .header ul{
+        padding: 0;
+        list-style-type: none;
+        display: inline-flex;
+        flex-direction: row;
+        margin: auto;
+    }
+      
+    /*Sätter 50px mellan varje item*/
+    .header li {
+      margin: 0px 50px 0px 0px;
+    }
+      
+    .header a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        position: relative;
+        margin: auto; 
+        top: +25px;
+        font-size: 15px;
+    }
+      
+    .header a:hover {
+        color: rgb(85, 21, 16);
+    }
+  
+    .header .right{
+        color: rgb(5, 66, 5); 
+        background-color: green;
+        border-radius: 40px;
+        padding: 10px; 
+    }
+    
+     /* MOBILMENYN */
+
+/* Styling för navigationsmenyn */
+.mobilNav {
+    overflow: inherit; 
+    display: flex;
+    max-width: 120px;
+  }
+  
+  /* Gömmer länkarna i navigationsmenyn om inte menyn är aktiv */
+  .mobilNav #myLinks {
+    display: none;
+    position: relative;
+    top: 10px;   
+    margin-left: -30px; 
+    background-color: black;
+  }
+  
+  /* Styling för länkarna i navigationsmenyn */
+  .mobilNav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Styling för hamburgermeny */
+  .mobilNav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  
+  .mobilNav a:hover {
+    color: rgb(85, 21, 16);
+  }
+  
+
+
+  /* FOOTERN */ 
+
+footer {
+    background-color: rgb(31, 28, 28);
+  }
+  
+p.copyright {
+    color: rgb(218, 218, 218);
+    margin-top: 20px; 
+    text-align: center;
+  }
+
+
+
+
+  /* SKÄRMANPASSNING */
+  
+
+/* EXTRA SMÅ ENHETER */
+@media only screen and (max-width: 600px) {
+    .text {font-size: 11px
+    }
+    
+    .desktopNav {
+      display: none;
+    }
+    
+    .mobilNav {
+      display: flex;
+    }
+    }
+    
+      /* VANLIGA MOBILSKÄRMAR OCH SMÅ PLATTOR */
+    @media only screen and (min-width: 600px) {
+    
+    .desktopNav {
+    display: none;
+    }
+    
+    .mobilNav {
+    display: flex;
+    }
+    }
+    
+    /* MEDIUMSTORA ENHETER (plattor) */
+    @media only screen and (min-width: 768px) {
+    .desktopNav {
+        display: none;  
+    }
+    
+    .mobilNav {
+    display: flex;
+    }
+    }
+    
+    /* STÖRRE ENHETER (laptops/desktops, 992px och uppåt) */
+    @media only screen and (min-width: 992px) {
+    .mobilNav {
+    display: none; 
+    }
+    
+    .desktopNav {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    }
+    
+    .desktopNav > li {
+      float: none; 
+    }
+    }
