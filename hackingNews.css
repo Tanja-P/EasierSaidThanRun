@@ -49,6 +49,9 @@ box-shadow: 0 0 30px rgba(0,0,0,.18);
 padding:10px;
 background:white;
 }
+div.row.news-row > a{
+color: #211B24 !important;
+}
 .news-row:hover{
 
 }
@@ -159,4 +162,5 @@ a {
 .datetime{
 color: #cdd6db;
 display: block;
+font-weight:bold;
 }
