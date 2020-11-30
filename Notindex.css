@@ -1,0 +1,262 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* @font-face {
+    font-family: 'elmessiri';
+    src:  url(./font/elmessiri-regular.otf) format(opentype);
+          font-weight: normal;
+          font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'elmessiri';
+    src:  url(./font/elmessiri-bold.otf) format(opentype);
+    font-weight: bold;
+    font-style: normal;
+  }
+*/
+
+body {
+    font-family: Inconsolata, monospace !important;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #211B24;
+    text-align: left;
+}
+
+p {
+  color: white; 
+}
+
+    /* HEADERN*/
+  
+    .header {
+        height: 100px;
+        background-color: rgb(31, 28, 28);
+        color: white;
+        position: sticky;
+        top: 0;
+        z-index: 9;
+        margin: 0px 100px 0px 100px; 
+    }
+    
+    .header .desktopNav li.logo a {
+        background-image: url("/img/hackerbooklogo.jpg");
+        background-size: 130px;
+        border-radius: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        text-indent: -9999999px;
+        top: +10px;
+        height: 80px;
+        width: 80px;
+        z-index: 10;
+    } 
+      
+    .scrolled .header {
+        opacity: 1;
+        transition: opacity .2s;
+        background-color: black;
+    }
+      
+    .header ul{
+        padding: 0;
+        list-style-type: none;
+        display: inline-flex;
+        flex-direction: row;
+        margin: auto;
+    }
+      
+    /*Sätter 50px mellan varje item*/
+    .header li {
+      margin: 0px 50px 0px 0px;
+    }
+      
+    .header a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        position: relative;
+        margin: auto; 
+        top: +38px;
+        font-size: 15px;
+    }
+      
+    .header a:hover {
+        color: rgb(148, 146, 146);
+    }
+  
+    .header .right{
+        color: rgb(5, 66, 5); 
+        background-color: rgb(2, 179, 2);
+        border-radius: 20px;
+        padding: 5px 30px 5px 30px; 
+    }
+    
+    .header .right:hover {
+        color: white; 
+    }
+    
+     /* MOBILMENYN */
+
+/* Styling för navigationsmenyn */
+.mobilNav {
+    overflow: inherit; 
+    display: flex;
+    max-width: 120px;
+  }
+  
+  /* Gömmer länkarna i navigationsmenyn om inte menyn är aktiv */
+  .mobilNav #myLinks {
+    display: none;
+    position: relative;
+    top: 10px;   
+    margin-left: -30px; 
+    background-color: black;
+  }
+  
+  /* Styling för länkarna i navigationsmenyn */
+  .mobilNav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Styling för hamburgermeny */
+  .mobilNav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  
+  .mobilNav a:hover {
+    color: rgb(236, 236, 236);
+  }
+  
+
+
+    /* HERO IMAGE */
+
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/hero8.gif");
+    width: 500px; 
+    min-height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    animation: hero-flickr 5s linear infinite;
+}
+  
+  /* DIV för all text på heroimg */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(2, 179, 2);
+}
+  
+.heroH1 { 
+    font-size: 50px;
+    margin-top: 0px; 
+}
+
+
+
+
+
+
+  /* FOOTERN */ 
+
+footer {
+    background-color: rgb(31, 28, 28);
+  }
+  
+p.copyright {
+    color: rgb(218, 218, 218);
+    margin-top: 20px; 
+    margin-bottom: 0px; 
+    text-align: center;
+  }
+
+p.designed {
+    color: #FF859D; 
+    text-align: center;
+    font-size: 11px; 
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer p:hover {
+    color: white; 
+}
+
+  /* SKÄRMANPASSNING */
+  
+
+/* EXTRA SMÅ ENHETER */
+@media only screen and (max-width: 600px) {
+    .text {font-size: 11px
+    }
+    
+    .desktopNav {
+      display: none;
+    }
+    
+    .mobilNav {
+      display: flex;
+    }
+    }
+    
+      /* VANLIGA MOBILSKÄRMAR OCH SMÅ PLATTOR */
+    @media only screen and (min-width: 600px) {
+    
+    .desktopNav {
+    display: none;
+    }
+    
+    .mobilNav {
+    display: flex;
+    }
+    }
+    
+    /* MEDIUMSTORA ENHETER (plattor) */
+    @media only screen and (min-width: 768px) {
+    .desktopNav {
+        display: none;  
+    }
+    
+    .mobilNav {
+    display: flex;
+    }
+    }
+    
+    /* STÖRRE ENHETER (laptops/desktops, 992px och uppåt) */
+    @media only screen and (min-width: 992px) {
+    .mobilNav {
+    display: none; 
+    }
+    
+    .desktopNav {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    }
+    
+    .desktopNav > li {
+      float: none; 
+    }
+    }
