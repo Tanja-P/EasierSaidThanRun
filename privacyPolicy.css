@@ -1,21 +1,6 @@
-/* body{
-    font-family: Inconsolata, monospace !important;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #211B24;
-    text-align: left;
-	height:100%;
-	margin:0;
-} */
-/* html { 
-  background: url(Background.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+a{
+text-decoration: none;
 }
- */
  .background{
  position: relative;
   height: 100%;
@@ -48,6 +33,30 @@ margin-left:25px !important;
 margin-bottom:40px;
 margin-top:40px;
 }
+/* START FOOTER */
+.main-footer{
+background-color: #211B24;
+display: block;
+margin: 0;
+padding: 0;
+border: 0;
+vertical-align: baseline;
+font-size: 100%;
+font-family: inherit;
+color:white;
+}
+.footer-wrap{
+text-align: center;
+}
+ul.row.footer-row{
+list-style:none;
+}
+.footer-links{
+margin-top: 25px;
+margin-bottom: 40px;
+}
+
+/* END FOOTER */
 @media (min-width: 300px and max-width: 550px) {
 .privacy-policy-column
 {

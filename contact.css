@@ -61,6 +61,31 @@ margin-bottom: 25px;
 .button:hover, input[type="submit"]:hover{
 color:#057BDD !important;
 }
+
+/* START FOOTER */
+.main-footer{
+background-color: #211B24;
+display: block;
+margin: 0;
+padding: 0;
+border: 0;
+vertical-align: baseline;
+font-size: 100%;
+font-family: inherit;
+color:white;
+}
+.footer-wrap{
+text-align: center;
+}
+ul.row.footer-row{
+list-style:none;
+}
+.footer-links{
+margin-top: 25px;
+margin-bottom: 40px;
+}
+
+/* END FOOTER */
 @media (min-width: 300px and max-width: 550px) {
 .contact-column
 {
