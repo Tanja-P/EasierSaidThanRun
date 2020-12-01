@@ -76,6 +76,7 @@ text-align: center;
 }
 ul.row.footer-row{
 list-style:none;
+margin-bottom:0px !important;
 }
 .footer-links{
 margin-top: 25px;
