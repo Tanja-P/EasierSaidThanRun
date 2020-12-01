@@ -44,6 +44,15 @@ margin-bottom:25px;
 #nameInput, #emailInput, #messageInput{
 margin-bottom: 25px;
 }
+a{
+ color:#057BDD !important;
+}
+/* .breadcrumbs {
+margin-bottom: 20px;
+} */
+.button:hover, input[type="submit"]:hover{
+color:#057BDD !important;
+}
 .skeleton-img{
 display: block;
 max-width: 100%;
