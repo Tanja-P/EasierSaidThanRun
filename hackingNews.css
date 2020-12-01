@@ -55,6 +55,17 @@ color: #211B24 !important;
 .news-row:hover{
 
 }
+a:hover{
+ -webkit-text-fill-color: #057BDD !important;
+-moz-text-fill-color: #057BDD !important;
+}
+div.container.news-container > a{
+color: #211B24 !important;
+}
+
+div.container.news-container > a:hover{
+color: #057BDD !important;
+}
 div.five.columns > img {
 padding: 25px 10px 0px 10px;
 }
