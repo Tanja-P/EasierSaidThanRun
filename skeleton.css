@@ -169,6 +169,7 @@ a:hover {
   -moz-text-fill-color: transparent; }
 
 
+
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button,
@@ -177,13 +178,13 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  height: 38px;
+  height: 36px;
   padding: 0 30px;
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 11px;
   font-weight: 600;
-  line-height: 38px;
+  line-height: 36px;
   letter-spacing: .1rem;
   text-transform: uppercase;
   text-decoration: none;
