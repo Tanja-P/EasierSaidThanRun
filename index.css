@@ -9,7 +9,6 @@ margin: 0;
 padding: 0;
 font-family: Inconsolata, monospace !important;
 vertical-align: baseline ;
-text-align: left;
 }
 
 body { background: url(bg.jpg); }
@@ -27,9 +26,7 @@ background: #FBFCFD; padding: 5px; position: relative; border: 1px solid #FBFCFD
 .registerbox p { margin: 7px 0 5px 0; }
 .registerbox label { display: block; color: #666; letter-spacing: 1px; font-size: 18px; }
 .registerbox input.mini { width:195px; }
-.registerbox input {
-padding: 12px 10px; color: #ccc;
-margin-top: 8px; font-size: 15px; border: 1px solid #ccc; width: 420px; outline: none;
+.registerbox input { padding: 12px 10px; color: #ccc; margin-top: 8px; font-size: 15px; border: 1px solid #ccc; width: 420px; outline: none;
 }
 .registerbox button {
 background-image:-webkit-linear-gradient(top, #000000, #057BDD);
@@ -235,44 +232,53 @@ top: 2px;
   -moz-text-fill-color: transparent;
 }
 
-/* FOOTERN */ 
-
-footer {
-  background-color: rgb(31, 28, 28);
-  bottom: 0;
-  width: 100%;
-  position: fixed;
-}
-
-p.copyright {
-  color: rgb(218, 218, 218);
-  margin-bottom: 0px; 
+/* START FOOTER */
+.main-footer{
+  background-color: #211B24;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-size: 100%;
+  font-family: inherit;
+  color:white;
+  }
+  .footer-wrap{
   text-align: center;
-}
-
-.designed {
-  text-align: center;
-  margin-top: -7px;
-  font-size: 11px;
-}
-
-.designed a{
-  color: #FF859D !important;
+  margin: 0 auto;
+  }
+  ul.row.footer-row{
+  list-style:none;
+  margin-bottom:0px !important;
+  }
+  .footer-links{
+  margin-top: 25px;
+  margin-bottom: 40px;
+  }
   
-}
+  .designed {
+    text-align: center;
+    margin-top: -7px;
+    font-size: 11px;
+  }
+  
+  .designed a{
+    color: #FF859D !important;
+  }
 
-footer a {
-text-decoration: none;
-color: whitesmoke;
-}
+  .tor {
+      font-size: 11px;
+  }
 
-footer li {
-  padding: 0; 
-  list-style-type: none;
-  display: inline-flex;
-  flex-direction: row;
-  margin: auto;
-}
+  .onionIcon {
+   width: 17px;
+   height: auto;
+   position: relative;
+   top: 4px;  
+  }
+
+  /* END FOOTER */
 
 
   
