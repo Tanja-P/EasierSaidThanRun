@@ -16,15 +16,44 @@
 
 <body>
 <div class="background">
-<header></header>
+<!-- header starts here -->
+<div id="header_wrapper">
+<header id="header">
+    <div id="logo"><a href="index.html">Logo</a></div>
+    
+    <ul>
+        <li><a href="loggedin.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="hackingNews.html">Hacking news</a></li>
+        <li><a href="cookies.html">Hacking tools</a></li>
+        <li><a href="cookies.html">Courses</a><li>
+        <li><a href="contact.html">Subscribe to newsletter</a></li>
+    </ul>
+    <ul class="ul2">
+        <li><a href="hackingChallenges.html">Hacking challenges</a></li>
+        <li><a href="contact.html">Chat room</a></li>
+        <li><a href="contact.html">search the archives</a></li>
+        <li><a href="contact.html">FAQ</a></li>
+        <li><a href="index.html">Logout</a></li>
+    </ul>
+</header>
+</div>
+<!-- header ends here -->
 
 <div class="container news-container">
-<div class="wrap">
-		<div class="breadcrumbs">
-		<a href="index2.html"><span>Home </span></a>
-		<span>»</span><span class="current">  Hacker News</span>
-		</div>		
-</div>
+	<div class="row">
+	<div class="wrap">
+			<div class="breadcrumbs six columns">
+			<a href="index2.html"><span>Home </span></a>
+			<span>»</span><span class="current">  Hacker News</span>
+			</div>
+			
+			<div class="searchBar six columns">
+			<input style="float:right;" aria-label="Search" type="search" placeholder="Search">
+			</div>
+	</div>
+	</div>
+
 <h1>Hacker News</h1>
 
 <div class="row news-row box is-clipped has-shadow-lift can-scale">
@@ -38,7 +67,6 @@
 </div>
 </a>
 </div>
-
 
 <div class="row news-row box is-clipped has-shadow-lift can-scale">
  <div class="five columns"><img src="img/fon_400x209.png" alt="News image" title="News image" class="skeleton-img"></div>
@@ -80,32 +108,38 @@
 </div>
 </div>
 
- <section class="twelve columns">
+<section class="twelve columns">
  <ul class="c-paginator"><li class="c-paginator-li"><a class="c-paginator__button c-current-page" href="#">1</a></li><li class="c-paginator-li"><a class="c-paginator__button " href="#">2</a></li><li class="c-paginator-li"><a class="c-paginator__button " href="#">3</a></li><li class="c-paginator-li"><a class="c-paginator__button " href="#">4</a></li><li><a class="c-paginator__dot">...</a></li><li><a class="c-paginator__button " href="#">6</a></li><li><a class="c-paginator__text c-next" href="#" rel="next"><span> Next </span></a></li></ul>
  </section>
 </div>
 
 <footer class="main-footer">
-<div class="footer-wrap">	
-	
-	<ul class="row footer-row">
-	
-	<li class="twelve columns">
-	<div class="footer-links">
-	<a href="/apply" rel="nofollow">About</a> | 
-	<a href="/about" rel="nofollow">Apply for work</a> |
-	<a href="/about" rel="nofollow">Advertising</a> |
-	<a href="/about" rel="nofollow">Contact</a> |
-	<a href="/about" rel="nofollow">FAQ</a>
-	</div>
-	</li>
-	<li class="twelve columns">
-	<a href="https://github.com/Tanja-P/EasierSaidThanRun"><p class="designed">Designed with &#10084; (and skeleton) - by TaRo</p></a>
-	<div class="">© Social hack. All rights reserved.</div>
-	</li>	
-	</ul>			
-</div>
+    <div class="footer-wrap">	
+        
+        <ul class="row footer-row">
+        
+        <li class="twelve columns">
+        <div class="footer-links">
+        <a href="about.html" rel="nofollow">About</a> | 
+        <a href="apply.html" rel="nofollow">Apply for work</a> |
+        <a href="advertising.html" rel="nofollow">Advertising</a> |
+        <a href="contact.html" rel="nofollow">Contact</a> |
+        <a href="faq.html" rel="nofollow">FAQ</a> |
+		<a href="subscribe.html">Subscribe to newsletter</a>
+
+        </div>
+        </li>
+        <li class="twelve columns">
+            <div class="designed"><a href="https://github.com/Tanja-P/EasierSaidThanRun">Designed with &#10084; (and skeleton) - by TaRo</a></div>
+        <div class="">© Social hack. All rights reserved.</div>
+        <div class="tor"><img src="img/torOnion.png" class="onionIcon" alt="Onion icon"> http://socialhackingkrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion</div>
+        </li>	
+        </ul>			
+    </div>
 </footer>
+
+
+<script src="index.js"></script>
 </div>
 </body>
 

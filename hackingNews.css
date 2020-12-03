@@ -8,13 +8,83 @@ body{
 	height:100%;
 	margin:0;
 }
-a{
- color:#057BDD !important;
+
+/* START HEADER*/ 
+#header_wrapper {
+background-color: rgb(0, 0, 0);
+border-bottom: 1px solid #c5c7c9;
+box-shadow: 0 0 2px rgba(0, 0, 0, 0.52);
+min-width: 1000px;
+width: 100%;
+z-index: 1000;
+top: 0;
+position: sticky; 
+margin-bottom: 25px;
 }
+
+#header {
+margin-left:auto;
+margin-right:auto;
+max-width:1000px;
+height: 85px;
+display: block;
+}
+
+.scrolled #header {
+  opacity: 1;
+  transition: opacity .2s;
+  background-color: black;
+}
+#header li {
+ list-style-type:none;
+ float:left;
+ color:white;
+ position: relative;
+ top: 15px; 
+}
+#header li a {
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+#logo a {
+background-image: url("/img/SH.jpg");
+background-size: 130px;
+border-radius: 100px;
+background-repeat: no-repeat;
+background-position: center;
+display: block;
+text-indent: -9999px;
+top: 5px;
+height: 75px;
+width: 160px;
+z-index: 10;
+float: left;
+position: relative;
+text-decoration:none;
+margin-right: 50px; 
+}
+
+a:active {
+    background-color: blue;
+}
+
+.ul2 {
+    position: relative;
+    left: 25px; 
+}
+/* END HEADER*/
+
+/* START BEADCRUMBS*/	
 .breadcrumbs {
 margin-bottom: 20px;
 }
- .background{
+.breadcrumbs > a {
+color: #057BDD !important;
+}
+/* END BEADCRUMBS*/	
+
+.background{
  position: relative;
   height: 100%;
  }
@@ -35,13 +105,11 @@ color: #cdd6db;
 display: block;
 font-weight:bold;
 }
-
 .skeleton-img{
 display: block;
 max-width: 100%;
 height: auto;
 }
-
 section{
 display:block;
 margin: 0;
@@ -56,6 +124,28 @@ margin-bottom: 40px;
 box-shadow: 0 0 30px rgba(0,0,0,.18);
 padding:10px;
 background:white;
+}
+div.row.news-row > a{
+color: #211B24 !important;
+}
+div.row.news-row > a:hover{
+-webkit-text-fill-color: #211B24 !important;
+-moz-text-fill-color: #211B24 !important;
+}
+div.container.news-container > a{
+color: #211B24 !important;
+}
+div.five.columns > img {
+padding: 25px 0px 0px 0px;
+}
+div.seven.columns{
+padding: 20px 0 0 0px;
+}
+div.seven.columns > h4{
+margin-bottom:3px;
+}
+p.datetime{
+margin-bottom: 10px;
 }
 
 /* HOVEREFFECT */
@@ -72,7 +162,6 @@ background:white;
 .has-shadow-lift:hover {
     box-shadow: 0 20px 40px rgba(12,12,94,.1) !important;
 }
-
 .box {
     background-color: #fff;
     border-radius: 6px;
@@ -81,41 +170,10 @@ background:white;
     display: block;
     padding: 1.25rem;
 }
-
 .is-clipped {
     overflow: hidden !important;
 }
 /* END HOVEREFFECT */
-
-div.row.news-row > a{
-color: #211B24 !important;
-}
-
-a:hover{
-/*  -webkit-text-fill-color: #057BDD !important;
--moz-text-fill-color: #057BDD !important; */
--webkit-text-fill-color: #211B24 !important;
--moz-text-fill-color: #211B24 !important;
-}
-div.container.news-container > a{
-color: #211B24 !important;
-}
-
-/* div.container.news-container > a:hover{
-color: #057BDD !important;
-} */
-div.five.columns > img {
-padding: 25px 0px 0px 0px;
-}
-div.seven.columns{
-padding: 20px 0 0 0px;
-}
-div.seven.columns > h4{
-margin-bottom:3px;
-}
-p.datetime{
-margin-bottom: 10px;
-}
 
 /* START PAGINATION */
 .c-paginator {
@@ -127,11 +185,6 @@ dl, ol, ul {
 }
 ol, ul {
     list-style: none;
-}
-@media screen and (min-width: 48em){
-.c-paginator li {
-    margin: .5rem .25rem;
-}
 }
 .c-paginator li {
     display: inline-block;
@@ -179,13 +232,12 @@ padding: 0;
 border: 0;
 font-size: 100%;
 }
-    a {
+a {
     background-color: transparent;
 }
 *, ::after, ::before {
     box-sizing: inherit;
 }
-
 .c-paginator .c-next {
     padding: 0 15px;
     position: relative;
@@ -206,11 +258,15 @@ a {
     text-decoration: none;
     transition: all .3s ease-in-out;
 }
+@media screen and (min-width: 48em){
+.c-paginator li {
+    margin: .5rem .25rem;
+}
+}
 /* END PAGINATION */
-
-
+    
 /* START FOOTER */
-.main-footer{
+	.main-footer{
     background-color: #211B24;
     display: block;
     margin: 0;
@@ -233,6 +289,35 @@ a {
     margin-top: 25px;
     margin-bottom: 40px;
     }
-    /* END FOOTER */
+    div.footer-links > a {
+    color: #fff !important;
+    cursor: pointer;
+    text-decoration: none;
+}
+div.footer-links > a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+    .designed {
+      text-align: center;
+      margin-top: -7px;
+      font-size: 11px;
+    }
     
+    .designed a{
+      color: #FF859D !important;
+    }
+
+    .tor {
+        font-size: 11px;
+    }
+
+    .onionIcon {
+     width: 17px;
+     height: auto;
+     position: relative;
+     top: 4px;  
+    }
+
+    /* END FOOTER */
 
