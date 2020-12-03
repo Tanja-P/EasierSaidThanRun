@@ -14,7 +14,7 @@ body{
 background-color: rgb(0, 0, 0);
 border-bottom: 1px solid #c5c7c9;
 box-shadow: 0 0 2px rgba(0, 0, 0, 0.52);
-min-width: 1000px;
+min-width: 100px;
 width: 100%;
 z-index: 1000;
 top: 0;
@@ -38,11 +38,11 @@ display: block;
  float:left;
  color:white;
  position: relative;
- top: 15px; 
+ top: 35px; 
 }
 #header li a {
     text-decoration: none;
-    margin-right: 30px;
+    margin-right: 25px;
 }
 #logo a {
 background-image: url("/img/SH.jpg");
@@ -60,13 +60,6 @@ float: left;
 position: relative;
 text-decoration:none;
 margin-right: 50px; 
-}
-a:active {
-    background-color: blue;
-}
-.ul2 {
-    position: relative;
-    left: 25px; 
 }
 /* END HEADER*/
 
