@@ -50,6 +50,9 @@ a{
 /* .breadcrumbs {
 margin-bottom: 20px;
 } */
+.breadcrumbs > a {
+color: #057BDD !important;
+}
 .button:hover, input[type="submit"]:hover{
 color:#057BDD !important;
 }

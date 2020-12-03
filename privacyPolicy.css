@@ -15,6 +15,9 @@ color:#057BDD !important;
 .breadcrumbs {
 margin-bottom: 20px;
 }
+.breadcrumbs > a {
+color: #057BDD !important;
+}
  .background{
  position: relative;
   height: 100%;

@@ -1,4 +1,4 @@
-html, body, div, span,
+/* html, body, div, span,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, b, u, i, center,
 dl, dt, dd, ol, ul, li,
@@ -9,19 +9,27 @@ margin: 0;
 padding: 0;
 font-family: Inconsolata, monospace !important;
 vertical-align: baseline ;
+} */
+body{
+    font-family: Inconsolata, monospace !important;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #211B24 !important;
+    text-align: left;
+	height:100%;
+	margin:0;
 }
-
-body { background: url(bg.jpg); }
+/* body { background: url(bg.jpg); } */
 h2 { font-size: 30px; line-height:38px; font-weight:normal; text-align: center; color: #141823;}
 
-.registerbox { background: #FBFCFD; padding: 10px; width: 490px; margin: 4% auto 0 auto; position: relative; }
+.registerbox { background: #FBFCFD; padding: 10px; width: 490px; margin: 4% auto 4% auto; position: relative; }
 .registerBoxInner {
 background: #FBFCFD; padding: 5px; position: relative; border: 1px solid #FBFCFD;
 -moz-box-shadow: inset 0 1px 0 #FBFCFD; -webkit-box-shadow: inset 0 1px 0 #FBFCFD; box-shadow: inset 0 1px 0 #FBFCFD;
 }
-.registerheader { height: 20px; }
+.registerheader { height: 20px; margin-bottom: 40px; }
 .registerform { margin: 4px auto; text-align:center; }
-
 .registerbox h1 { font-size: 30px; letter-spacing: 1px; color: #555; font-weight: normal; padding-top: 10px; }
 .registerbox p { margin: 7px 0 5px 0; }
 .registerbox label { display: block; color: #666; letter-spacing: 1px; font-size: 18px; }
@@ -44,8 +52,6 @@ font-family: Inconsolata, monospace !important;
 box-shadow: 1px 1px 3px #2e2e2e; 
 cursor: pointer;
 }
-
-
 .radius { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 .radius1 { -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
 
@@ -57,8 +63,7 @@ cursor: pointer;
   font-size:16px; 
   }
 
-#header_wrapper
-{
+#header_wrapper{
 background-color: rgb(0, 0, 0);
 border-bottom: 1px solid #c5c7c9;
 box-shadow: 0 0 2px rgba(0, 0, 0, 0.52);
@@ -68,7 +73,6 @@ z-index: 1000;
 top: 0;
 position: sticky; 
 }
-
 #header {
 margin-left:auto;
 margin-right:auto;
@@ -76,15 +80,11 @@ max-width:1000px;
 height: 85px;
 display: block;
 }
-
 .scrolled #header {
   opacity: 1;
   transition: opacity .2s;
   background-color: black;
 }
-
-
-
 #logo a {
 background-image: url("/img/SH.jpg");
 background-size: 130px;
@@ -101,52 +101,40 @@ float: left;
 position: relative;
 text-decoration:none;
 }
-
-
-#header li
-{
+#header li{
  list-style-type:none;
  float:left;
  text-align:left;
  color:white;
 }
-
-#header form
-{
+#header form{
  margin-top:15px;
  float:right;
 }
-#header form li
-{ 
+#header form li{ 
  font-size:13px;
  margin-left:25px;
 }
-#header form li a
-{
+#header form li a{
   position: relative;
   top: 3px;
  color:#fff;
  text-decoration:none;
 }
-
-#header form input[type="text"]
-{
+#header form input[type="text"]{
  margin-top:3px;
  margin-bottom:3px;
  width:150px;
  height:35px;
  padding-left:3px;
 }
-#header form input[type="password"]
-{
+#header form input[type="password"]{
  margin-top:3px;
  margin-bottom:3px;
  width:150px;
  height:35px;
  padding-left:3px;
 }
-
-
 #login_form .inputtext{
 background-color: #ffffff;
 height: 37px; 
@@ -156,7 +144,6 @@ padding: 5px 8px 5px 8px;
 width: 166px;
 border: 1px solid #c5c7c9;
 }
-
 #login_form .inputtext:hover {
   border-color: #A0A0A0 #B9B9B9 #B9B9B9;
   border-image: none;
@@ -164,8 +151,6 @@ border: 1px solid #c5c7c9;
   border-width: 1px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
   }
-
-
 .loginbutton { 
 background-image:-webkit-linear-gradient(top, #000000, #057BDD);
 color: rgb(252, 252, 252); 
@@ -178,12 +163,10 @@ font-weight: normal;
 position: relative;
 top: 2px; 
 }
-
 #login_form {
   padding: 0 0 0 5px;
-  }
-  
-  #login_form label {
+  } 
+#login_form label {
   color: #fff;
   cursor: pointer;
   font-size: 12px;
@@ -195,9 +178,7 @@ top: 2px;
   top: -15px; 
   }
 
-
 /* HERO IMAGE */
-
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/hero12.gif");
     width: 600px; 
@@ -210,7 +191,6 @@ top: 2px;
     left: 0;
     z-index: -10;
 }
-  
   /* DIV för all text på heroimg */
 .hero-text {
   text-align: center;
@@ -219,8 +199,6 @@ top: 2px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-
 .heroP {
   text-align: center;
   background-color: #777777;
@@ -228,57 +206,63 @@ top: 2px;
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: #fff; 
+  -moz-text-fill-color: #fff;
+  color: #fff !important;
 }
+/* END HERO IMAGE */
 
 /* START FOOTER */
-.main-footer{
-  background-color: #211B24;
-  display: block;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-  font-size: 100%;
-  font-family: inherit;
-  color:white;
-  }
-  .footer-wrap{
-  text-align: center;
-  margin: 0 auto;
-  }
-  ul.row.footer-row{
-  list-style:none;
-  margin-bottom:0px !important;
-  }
-  .footer-links{
-  margin-top: 25px;
-  margin-bottom: 40px;
-  }
-  
-  .designed {
+	.main-footer{
+    background-color: #211B24;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-size: 100%;
+    font-family: inherit;
+    color:white;
+    }
+    .footer-wrap{
     text-align: center;
-    margin-top: -7px;
-    font-size: 11px;
-  }
-  
-  .designed a{
-    color: #FF859D !important;
-  }
-
-  .tor {
+    margin: 0 auto;
+    }
+    ul.row.footer-row{
+    list-style:none;
+    margin-bottom:0px !important;
+    }
+    .footer-links{
+    margin-top: 25px;
+    margin-bottom: 40px;
+    }
+    div.footer-links > a {
+    color: #fff !important;
+    cursor: pointer;
+    text-decoration: none;
+	}
+	div.footer-links > a:hover {
+		cursor: pointer;
+		text-decoration: none;
+	}
+    .designed {
+      text-align: center;
+      margin-top: -7px;
       font-size: 11px;
-  }
-
-  .onionIcon {
-   width: 17px;
-   height: auto;
-   position: relative;
-   top: 4px;  
-  }
-
-  /* END FOOTER */
+    }
+    .designed a{
+      color: #FF859D !important;
+    }
+    .tor {
+        font-size: 11px;
+    }
+    .onionIcon {
+     width: 17px;
+     height: auto;
+     position: relative;
+     top: 4px;  
+    }
+/* END FOOTER */
 
 
   

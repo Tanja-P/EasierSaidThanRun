@@ -21,7 +21,6 @@ top: 0;
 position: sticky; 
 margin-bottom: 25px;
 }
-
 #header {
 margin-left:auto;
 margin-right:auto;
@@ -29,7 +28,6 @@ max-width:1000px;
 height: 85px;
 display: block;
 }
-
 .scrolled #header {
   opacity: 1;
   transition: opacity .2s;
@@ -46,7 +44,6 @@ display: block;
     text-decoration: none;
     margin-right: 30px;
 }
-
 #logo a {
 background-image: url("/img/SH.jpg");
 background-size: 130px;
@@ -64,11 +61,9 @@ position: relative;
 text-decoration:none;
 margin-right: 50px; 
 }
-
 a:active {
     background-color: blue;
 }
-
 .ul2 {
     position: relative;
     left: 25px; 
