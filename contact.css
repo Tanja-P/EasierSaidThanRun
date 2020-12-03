@@ -1,36 +1,3 @@
-body{
-    font-family: Inconsolata, monospace !important;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #211B24;
-    text-align: left;
-	height:100%;
-	margin:0;
-}
-a{
- color:#057BDD !important;
- text-decoration: none;
-}
-.breadcrumbs {
-margin-bottom: 20px;
-}
-.background{
- position: relative;
-  height: 100%;
- }
-.background:before {
-  background-image:  url(img/Background.jpg);
-  content: '';
-  position: absolute;
-  left: 0; right: 0; top: 0; bottom: 0;
-  z-index: -1;
-  opacity: 0.2;
-   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 div.contact-row{
 min-height:250px;
 border: 1px solid darkblue;
@@ -47,16 +14,17 @@ margin-left:25px !important;
 margin-bottom:40px;
 margin-top:40px;
 }
-
+#messageInput{
+margin-bottom: 25px;
+height:200px;
+}
 form > input.message-submit{
 background: #0E5B8E;
 color:white;
+margin-bottom: 40px;
 }
 .form-row{
 margin-bottom:25px;
-}
-#nameInput, #emailInput, #messageInput{
-margin-bottom: 25px;
 }
 .section-head { 
      border-color: #eee;
@@ -70,47 +38,4 @@ margin-bottom: 25px;
 }
 .button:hover, input[type="submit"]:hover{
 color:#057BDD !important;
-}
-
-/* START FOOTER */
-.main-footer{
-background-color: #211B24;
-display: block;
-margin: 0;
-padding: 0;
-border: 0;
-vertical-align: baseline;
-font-size: 100%;
-font-family: inherit;
-color:white;
-}
-.footer-wrap{
-text-align: center;
-margin: 0 auto;
-}
-ul.row.footer-row{
-list-style:none;
-margin-bottom:0px !important;
-}
-.footer-links{
-margin-top: 25px;
-margin-bottom: 40px;
-}
-
-.designed {
-  text-align: center;
-  margin-top: -7px;
-  font-size: 11px;
-}
-
-.designed a{
-  color: #FF859D !important;
-}
-/* END FOOTER */
-
-@media (min-width: 300px and max-width: 550px) {
-.contact-column
-{
-margin-left:0px !important;
-}
 }
