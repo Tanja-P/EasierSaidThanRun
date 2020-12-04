@@ -177,49 +177,8 @@ top: 2px;
   position: relative;
   top: -15px; 
   }
- /* SLUT DESKTOP-HEADERN */
-
-   /* MOBILMENYN */
-
-/* Styling för navigationsmenyn */
-.mobilNav {
-  overflow: inherit; 
-  display: flex;
-  max-width: 120px;
-}
-
-/* Gömmer länkarna i navigationsmenyn om inte menyn är aktiv */
-.mobilNav #myLinks {
-  display: none;
-  position: relative;
-  top: 10px;   
-  margin-left: -30px; 
-  background-color: black;
-}
-
-/* Styling för länkarna i navigationsmenyn */
-.mobilNav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-/* Styling för hamburgermeny */
-.mobilNav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
-.mobilNav a:hover {
-  color: rgb(85, 21, 16);
-}
-
- /* SLUT MOBILMENYN */
+ /* SLUT HEADERN */
+ */
 
 
 
@@ -228,20 +187,8 @@ top: 2px;
 
 /* SKÄRMANPASSNING */
   
-
 /* EXTRA SMÅ ENHETER */
-@media only screen and (max-width: 600px) {
-  .text {font-size: 11px
-  }
-  
-  #header {
-    display: none;
-  }
-  
-  .mobilNav {
-    display: flex;
-  }
-  
+@media only screen and (max-width: 600px) {  
   .hero-image {
     background-attachment: scroll;
   }
@@ -249,15 +196,7 @@ top: 2px;
   
     /* VANLIGA MOBILSKÄRMAR OCH SMÅ PLATTOR */
   @media only screen and (min-width: 600px) {
-  
-  .#header {
-  display: none;
-  }
-  
-  .mobilNav {
-  display: flex;
-  }
-  
+
   .hero-image {
     background-attachment: scroll;
   }
@@ -265,34 +204,14 @@ top: 2px;
   
   /* MEDIUMSTORA ENHETER (plattor) */
   @media only screen and (min-width: 768px) {
-  .#header {
-      display: none;  
-  }
-  
-  .mobilNav {
-  display: flex;
-  }
-  
+ 
   .hero-image {
-    background-attachment: scroll;
+    background-attachment: fixed;
   }
   }
   
   /* STÖRRE ENHETER (laptops/desktops, 992px och uppåt) */
   @media only screen and (min-width: 992px) {
-  .mobilNav {
-  display: none; 
-  }
-  
-  .#header {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  }
-  
-  .#header > li {
-    float: none; 
-  }
   
   .hero-image {
     background-attachment: fixed;
