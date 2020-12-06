@@ -59,23 +59,3 @@ max-width: 100%;
 height: auto;
 /* margin-left:4%; */
 }
-
-/* Mobile first queries */
-
-/* Mobile */
-@media (min-width: 300px and max-width: 550px) {
-/* .skeleton-img{margin-left:0%;}*/
-} 
-
-/* Larger than phablet */
-@media (min-width: 550px) {}
-
-/* Larger than tablet */
-@media (min-width: 750px) {}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}
-
