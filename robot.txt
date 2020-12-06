@@ -1,6 +1,13 @@
 User-agent: *
 Disallow: hackingChallenges.html
 Disallow: hackingNews.html
+Disallow: hackingTools.html
+Disallow: article.html
+Disallow: privacyPolicy.html
+Disallow: contact.html
+Disallow: courses.html
+Disallow: chatRoom.html
 Disallow: about.html
+
 
 Sitemap: http://easiersaidthanrun.com/sitemap.xml
