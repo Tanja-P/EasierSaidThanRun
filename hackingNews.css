@@ -143,6 +143,11 @@ color: #057BDD !important;
 margin: 25px 0 0 !important;
 float:right;
 }
+.search{
+background: url(img/search-icon-small.png) no-repeat right 10px center;
+float:right; 
+width:100%;
+}
 
 /* HOVEREFFECT */
 .can-scale {
