@@ -1,0 +1,80 @@
+<div id="CybotCookiebotDialog" name="CybotCookiebotDialog" role="dialog" aria-describedby="CybotCookiebotDialogBodyContentTitle" lang="en" dir="ltr" ng-non-bindable style="display: block; padding-bottom: 18px; opacity: 1; top: 748px; width: 100%; height: auto;">
+    <div id="CybotCookiebotDialogBody">
+
+        <div id="CybotCookiebotDialogBodyContent" style="padding-left: 8px;"> 
+        <h2 id="CybotCookiebotDialogBodyContentTitle">This website uses cookies</h2>
+            <div id="CybotCookiebotDialogBodyContentText">
+                <p>We use cookies to personalise content and ads, 
+                    to provide social media features and to analyse our traffic. 
+                    We also share information about your use of our site with our social media, 
+                    advertising and analytics partners who may combine it with other information 
+                    that you’ve provided to them or that they’ve collected from your use of their services.</p>
+                    <p>In order to specify which cookies to allow please make a choice amongst the following:</p>
+                </div> <!--Ends cookiecontentText-->
+                </div> <!--Ends cookieBodyContent (body container)-->
+
+                <div id="CybotCookiebotDialogBodyContentControls" style="display: none;">
+                    <div id="CybotCookiebotDialogBodyContentControlsWrapper"><input type="checkbox" id="CybotCookiebotDialogBodyContentCheckboxPersonalInformation" class="CybotCookiebotDialogBodyLevelButton" tabindex="0"><label class="CybotCookiebotDialogBodyContentLabelPersonalInformation" for="CybotCookiebotDialogBodyContentCheckboxPersonalInformation">[#00I_PERSONAL_INFORMATION#]</label>
+                    </div>
+                </div>
+
+                <div id="CybotCookiebotDialogBodyButtons" style="display: none;">
+                    <a id="CybotCookiebotDialogBodyButtonDecline" class="CybotCookiebotDialogBodyButton" href="javascript: void(0);" tabindex="0" lang="en"> Use necessary cookies only</a>
+                    <a id="CybotCookiebotDialogBodyButtonAccept" class="CybotCookiebotDialogBodyButton" href="javascript: void(0);" tabindex="0" lang="en" style="margin-left: 2px;"> Allow all cookies</a>
+                    <a id="CybotCookiebotDialogBodyButtonDetails" class="CybotCookiebotDialogBodyLink" href="javascript: void(0);" tabindex="0" lang="en">Show details</a>
+                </div>
+
+                <!---Checkboxes-->
+                <div id="CybotCookiebotDialogBodyLevelWrapper" style="display: block;"> <!--Wrapper for checkboxes-->
+ <!--FIRST SECONDARY MAIN WRAPPER WITHING LEVELWRAPPER--><div id="CybotCookiebotDialogBodyLevelButtonAcceptWrapper" style="display: none;">
+                                                    <a id="CybotCookiebotDialogBodyLevelButtonAccept" href="javascript: void(0);" tabindex="0" lang="en"> OK </a>
+                                                </div> <!--CLOSING 1ST SECONDARY MAIN WRAPPER-->
+
+<!--2ND SECONDARY MAIN--><div id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelectionWrapper" style="display: block;">
+    <a id="CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll" class="CybotCookiebotDialogBodyButton" href="javascript: void(0);" tabindex="0" lang="en" style="width: 155px;"> Use necessary cookies only </a>
+    <a id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection" class="CybotCookiebotDialogBodyButton" href="javascript: void(0);" tabindex="0" lang="en" style="width: 155px;"> Allow selection </a>
+    <a id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll" class="CybotCookiebotDialogBodyButton" href="javascript: void(0);" tabindex="0" lang="en" style="width: 155px;"> Allow all cookies </a>
+                        </div> <!--CLOSING 2ND SECONDARY MAIN-->
+                    
+<!--3RD SECONDARY MAIN--><div id="CybotCookiebotDialogBodyLevelButtons" style="margin-left: 8px; float: left; pointer-events: auto; margin-right: 0px;">
+                        <tbody id="CybotCookiebotDialogBodyLevelButtonsTable" style="width: 624px">
+                            <div id="CybotCookiebotDialogBodyLevelButtonsRow">
+                                <div id="CybotCookiebotDialogBodyLevelButtonsSelectPanel">
+
+                                    <div class="CybotCookiebotDialogBodyLevelButtonWrapper" title="Mandatory">
+                                        <input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonNecessary" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelButtonDisabled" disabled="disabled" checked="checked">
+                                        <label for="CybotCookiebotDialogBodyLevelButtonNecessary">Necessary</label>
+                                    </div>    
+
+                                    <div class="CybotCookiebotDialogBodyLevelButtonWrapper" title="Preferences">
+                                        <input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonPreferences" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelButtonDisabled" disabled="disabled" checked="checked">
+                                        <label for="CybotCookiebotDialogBodyLevelButtonPreferences">Preferences</label>
+                                    </div>    
+
+                                    <div class="CybotCookiebotDialogBodyLevelButtonWrapper" title="Statistics">
+                                        <input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonStatistics" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelButtonDisabled" disabled="disabled" checked="checked">
+                                        <label for="CybotCookiebotDialogBodyLevelButtonStatistics">Statistics</label>
+                                    </div>    
+                                     
+                                    <div class="CybotCookiebotDialogBodyLevelButtonWrapper" title="Marketing">
+                                        <input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonMarketing" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelButtonDisabled" disabled="disabled" checked="checked">
+                                        <label for="CybotCookiebotDialogBodyLevelButtonMarketing">Marketing</label>
+                                        </div>    
+                                </div> <!--SELECTPANEL CLOSING-->
+                                
+                                <div id=CybotCookiebotDialogBodyLevelDetailsWrapper>
+                                    <a id="CybotCookiebotDialogBodyLevelDetailsButton" 
+                                    class="CybotCookiebotDialogBodyLink" 
+                                    href="javascript: void(0);" 
+                                    tabindex="0" lang="en">Show details</a>
+                                    </div>
+
+                            </div> <!--BODYLEVELBUTTONSROW-->
+                        </tbody>  <!--LEVELBUTTONTABLE-->
+                    </div>      <!--BODYLEVELBUTTONS-->
+                                   
+                                </div> <!--closes bodylevelwrapper-->
+                            </div> <!--STÄNGER BODYN (Dialogbody)-->
+<!--4TH SECONDARY MAIN--><div id="CybotCookiebotDialogDetail"><!--DROP-DOWN-MENYN (SOM LÄMNAS TOM TSV.)-->
+                                </div> <!--CLOSING 4TH SECONDARY MAIN--><!--DENNA CLOSAR EFTER BODYN MEN FÖRE YTTERSTA WRAPPEN-->
+                            </div> <!--Ends YTTERSTA WRAPPEN-->

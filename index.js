@@ -19,3 +19,11 @@ window.addEventListener('scroll', function () {
           x.className = "topnav";
         }
       }
+
+window.removeEventListener ('CybotCookiebotDialog')
+function accept() {
+  var x = document.getElementById("acceptbutton")
+  if (x.className === "accepted")
+}
+
+
