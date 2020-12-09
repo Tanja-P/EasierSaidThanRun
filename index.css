@@ -20,6 +20,39 @@ body{
 	height:100%;
 	margin:0;
 }
+
+/*COOKIE BANNER*/
+
+#cookieBanner {
+  background-color: rgb(141, 141, 141);
+  padding: 20px 20px 0px 20px;
+  z-index: 25;
+  position: fixed;
+  height: auto; 
+  border-radius: 5px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  line-height: 24px;
+  bottom: 0;
+  left: 25%;
+  right: 25%;
+  width: 50%; 
+}
+
+.js-cookie-dismiss {
+margin-top: 12px; 
+margin-right: 10px;
+height: 35px; 
+padding: 5px; 
+}
+
+.cookiepol {
+color: rgb(46, 15, 184); 
+text-decoration: underline;
+}
+
+
+
+
 /* body { background: url(bg.jpg); } */
 h2 { font-size: 30px; line-height:38px; font-weight:normal; text-align: center; color: #141823;}
 
