@@ -13,8 +13,8 @@ p {
 text-align: center;
 }
 
-a {
-color: blue; 
+.challA {
+color: #0E5B8E !important; 
 }
 
 .label {
