@@ -52,6 +52,10 @@ font-family: Inconsolata, monospace !important;
 box-shadow: 1px 1px 3px #2e2e2e; 
 cursor: pointer;
 }
+.registerbox button:hover { 
+color: #057BDD !important;
+-webkit-text-fill-color: #057BDD;
+}
 .radius { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 .radius1 { -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
 
@@ -67,7 +71,7 @@ cursor: pointer;
 background-color: rgb(0, 0, 0);
 border-bottom: 1px solid #c5c7c9;
 box-shadow: 0 0 2px rgba(0, 0, 0, 0.52);
-min-width: 1000px;
+/* min-width: 1000px; */
 width: 100%;
 z-index: 1000;
 top: 0;
@@ -76,16 +80,16 @@ position: sticky;
 #header {
 margin-left:auto;
 margin-right:auto;
-max-width:1000px;
+/* max-width:1000px; */
 height: 85px;
 display: block;
 }
-.scrolled #header {
+/* .scrolled #header {
   opacity: 1;
   transition: opacity .2s;
   background-color: black;
-}
-#logo a {
+} */
+/* #logo a {
 background-image: url("/img/SH.jpg");
 background-size: 130px;
 border-radius: 100px;
@@ -100,7 +104,7 @@ z-index: 10;
 float: left;
 position: relative;
 text-decoration:none;
-}
+} */
 #header li{
  list-style-type:none;
  float:left;
@@ -110,6 +114,7 @@ text-decoration:none;
 #header form{
  margin-top:15px;
  float:right;
+ margin-right:25px;
 }
 #header form li{ 
  font-size:13px;
@@ -163,6 +168,10 @@ font-weight: normal;
 position: relative;
 top: 2px; 
 }
+.loginbutton:hover { 
+color: #057BDD !important;
+-webkit-text-fill-color: #057BDD;
+}
 #login_form {
   padding: 0 0 0 5px;
   } 
@@ -178,30 +187,28 @@ top: 2px;
   top: -15px; 
   }
  /* SLUT HEADERN */
- */
-
-
-
-
 
 
 /* SKÄRMANPASSNING */
   
 /* EXTRA SMÅ ENHETER */
-@media only screen and (max-width: 600px) {  
-  .hero-image {
-    background-attachment: scroll;
-  }
-  }
+@media all and (max-width: 600px) and (min-width: 300px){  
+	#header form li { margin-right: 509px; }
+	.header { height:250px !important;}
+	#header form{margin-top: -70px; float:left;margin-left: 60%;}
+	.logo{float:none;}
+	.registerbox{width:auto;}
+	.img-row:{margin-left:0 !important;}
+}
   
     /* VANLIGA MOBILSKÄRMAR OCH SMÅ PLATTOR */
-  @media only screen and (min-width: 600px) {
+  /* @media only screen and (min-width: 600px) {
 
   .hero-image {
     background-attachment: scroll;
+  } 
   }
-  }
-  
+   */
   /* MEDIUMSTORA ENHETER (plattor) */
   @media only screen and (min-width: 768px) {
  
@@ -216,6 +223,18 @@ top: 2px;
   .hero-image {
     background-attachment: fixed;
   }
+  }
+  @media all and (max-width: 1000px) and (min-width: 992px){
+  #header form {
+    margin-right: 155px;
+}
+  }
+  @media all and (max-width: 991px) and (min-width: 600px){
+  #header form {
+    margin-right: 0px;
+	float:left;
+	}
+.logo{float:left;}
   }
 
 

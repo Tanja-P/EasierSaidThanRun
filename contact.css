@@ -10,7 +10,7 @@ div.contact-row > a{
 color: #211B24 !important;
 }
 .contact-column{
-margin-left:25px !important;
+/* margin-left:25px !important; */
 margin-bottom:40px;
 margin-top:40px;
 }
