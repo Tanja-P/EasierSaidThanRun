@@ -8,6 +8,7 @@ Disallow: contact.html
 Disallow: courses.html
 Disallow: chatRoom.html
 Disallow: about.html
+Disallow: errorPage.html
 
 
 Sitemap: http://easiersaidthanrun.com/sitemap.xml
