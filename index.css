@@ -51,10 +51,7 @@ text-decoration: underline;
 }
 
 
-
-
-/* body { background: url(bg.jpg); } */
-h2 { font-size: 30px; line-height:38px; font-weight:normal; text-align: center; color: #141823;}
+h1, h2, h3 {text-align: center;}
 
 .registerbox { background: #FBFCFD; padding: 10px; width: 490px; margin: 4% auto 4% auto; position: relative; }
 .registerBoxInner {
