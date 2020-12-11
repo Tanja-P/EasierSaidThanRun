@@ -50,7 +50,6 @@ color: rgb(46, 15, 184);
 text-decoration: underline;
 }
 
-
 h1, h2, h3 {text-align: center;}
 
 .registerbox { background: #FBFCFD; padding: 10px; width: 490px; margin: 4% auto 4% auto; position: relative; }
@@ -64,7 +63,7 @@ background: #FBFCFD; padding: 5px; position: relative; border: 1px solid #FBFCFD
 .registerbox p { margin: 7px 0 5px 0; }
 .registerbox label { display: block; color: #666; letter-spacing: 1px; font-size: 18px; }
 .registerbox input.mini { width:195px; }
-.registerbox input { padding: 12px 10px; color: #ccc; margin-top: 8px; font-size: 15px; border: 1px solid #ccc; width: 420px; outline: none;
+.registerbox input { padding: 12px 10px; color: #ccc; margin-top: 8px; font-size: 15px; border: 1px solid #ccc; width: 400px; outline: none;
 }
 .registerbox button {
 background-image:-webkit-linear-gradient(top, #000000, #057BDD);
@@ -74,7 +73,7 @@ padding: 10px 20px;
 font-size: 18px; 
 letter-spacing: 1px; 
 color: #fff; 
-width: 420px; 
+width: 400px; 
 line-height:30px; 
 font-family: Inconsolata, monospace !important;
 -moz-box-shadow: 1px 1px 3px #2e2e2e; 
@@ -114,27 +113,7 @@ margin-right:auto;
 height: 85px;
 display: block;
 }
-/* .scrolled #header {
-  opacity: 1;
-  transition: opacity .2s;
-  background-color: black;
-} */
-/* #logo a {
-background-image: url("/img/SH.jpg");
-background-size: 130px;
-border-radius: 100px;
-background-repeat: no-repeat;
-background-position: center;
-display: block;
-text-indent: -9999px;
-top: 5px;
-height: 75px;
-width: 160px;
-z-index: 10;
-float: left;
-position: relative;
-text-decoration:none;
-} */
+
 #header li{
  list-style-type:none;
  float:left;
@@ -217,73 +196,7 @@ color: #057BDD !important;
   top: -15px; 
   }
  /* SLUT HEADERN */
-
-
-/* SKÄRMANPASSNING */
   
-/* EXTRA SMÅ ENHETER */
-@media all and (max-width: 600px) and (min-width: 300px){  
-	#header form li { margin-right: 509px; }
-	.header { height:250px !important;}
-	#header form{margin-top: -70px; float:left;margin-left: 60%;}
-	.logo{float:none;}
-	.registerbox{width:auto;}
-	.img-row:{margin-left:0 !important;}
-}
-  
-    /* VANLIGA MOBILSKÄRMAR OCH SMÅ PLATTOR */
-  /* @media only screen and (min-width: 600px) {
-
-  .hero-image {
-    background-attachment: scroll;
-  } 
-  }
-   */
-  /* MEDIUMSTORA ENHETER (plattor) */
-  @media only screen and (min-width: 768px) {
- 
-  .hero-image {
-    background-attachment: fixed;
-  }
-  }
-  
-  /* STÖRRE ENHETER (laptops/desktops, 992px och uppåt) */
-  @media only screen and (min-width: 992px) {
-  
-  .hero-image {
-    background-attachment: fixed;
-  }
-  }
-  @media all and (max-width: 1000px) and (min-width: 992px){
-  #header form {
-    margin-right: 155px;
-}
-  }
-  @media all and (max-width: 991px) and (min-width: 600px){
-  #header form {
-    margin-right: 0px;
-	float:left;
-	}
-.logo{float:left;}
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* HERO IMAGE */
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/hero12.gif");
@@ -330,6 +243,7 @@ color: #057BDD !important;
     left: 500;
     z-index: -10;
 }
+
 /* START FOOTER */
 	.main-footer{
     background-color: #211B24;
@@ -382,6 +296,64 @@ color: #057BDD !important;
      top: 4px;  
     }
 /* END FOOTER */
+
+
+/* SKÄRMANPASSNING */
+  
+/* EXTRA SMÅ ENHETER */
+@media all and (max-width: 600px) and (min-width: 300px){  
+	#header form li { margin-right: 509px; }
+	.header { height:250px !important;}
+	#header form{margin-top: -70px; float:left;margin-left: 55%;}
+	.logo{float:none;}
+	.registerbox{width:auto;}
+	.img-row:{margin-left:0 !important;}
+	#cookieBanner {
+    left: 4%;
+    right: 4%;
+	font-size:12px;
+	width:auto;
+}
+.hero-image {
+  display:none;
+    /* background-attachment: fixed; */
+  }
+  body{overflow-x: hidden;}
+}
+  
+    /* VANLIGA MOBILSKÄRMAR OCH SMÅ PLATTOR */
+  /* @media only screen and (min-width: 600px) {
+
+  .hero-image {
+    background-attachment: scroll;
+  } 
+  }
+   */
+  /* MEDIUMSTORA ENHETER (plattor) */
+  @media only screen and (min-width: 768px) {
+  .hero-image {
+	background-attachment: fixed;
+  }
+  }
+  
+  /* STÖRRE ENHETER (laptops/desktops, 992px och uppåt) */
+  @media only screen and (min-width: 992px) {  
+  .hero-image {
+    background-attachment: fixed;
+  }
+  }
+  @media all and (max-width: 1000px) and (min-width: 992px){
+  #header form {
+    margin-right: 155px;
+}
+  }
+  @media all and (max-width: 991px) and (min-width: 600px){
+  #header form {
+    margin-right: 0px;
+	float:left;
+	}
+.logo{float:left;}
+  }
 
 
   
