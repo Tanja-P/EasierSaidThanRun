@@ -19,13 +19,15 @@ color: #0E5B8E !important;
 
 .label {
     margin: 30px 0 0px 0; 
-    text-align: center;
+    text-align: left;
     font-size: 50px; 
+
 }
 
 .label2 {
-  font-size: 25px;
-  text-align: center;
+  font-size: 20px;
+  text-align: left;
+  margin-top: 10px;     
 }
 
 .skeleton-img{
