@@ -304,7 +304,7 @@ color: #057BDD !important;
 @media all and (max-width: 600px) and (min-width: 300px){  
 	#header form li { margin-right: 509px; }
 	.header { height:250px !important;}
-	#header form{margin-top: -70px; float:left;margin-left: 55%;}
+	#header form{margin-top: -70px; float:left;margin-left: 50%;}
 	.logo{float:none;}
 	.registerbox{width:auto;}
 	.img-row:{margin-left:0 !important;}
@@ -319,6 +319,7 @@ color: #057BDD !important;
     /* background-attachment: fixed; */
   }
   body{overflow-x: hidden;}
+  .registerbox input, .registerbox button{width:300px;}
 }
   
     /* VANLIGA MOBILSKÄRMAR OCH SMÅ PLATTOR */
