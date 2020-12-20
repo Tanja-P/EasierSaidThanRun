@@ -1,0 +1,46 @@
+body{
+ position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+   z-index: -1;
+}
+.wrapper{
+background-image: linear-gradient(180deg, #F6F8FC 26%, #C6C7C9 50%, #ACADB1 70%); 
+position: relative;
+background-size: auto, cover;
+overflow:hidden;
+height:100%;
+}
+.errorPage{
+    text-align: center;
+    margin-top: 12% !important;
+	font-family: 'Special Elite', cursive !important;
+	color: black;
+	border: 0.8rem solid black;
+	/* -webkit-mask-position: 13rem 6rem;
+	transform: rotate(-14deg); */
+  border-radius: 0;
+}
+.main-footer{
+position: absolute;
+bottom: 0px;
+right: 0px;
+left: 0px;
+}
+.headertext{
+padding-top: 25px;
+}
+.stamp {
+ /*  transform: rotate(12deg); */
+	color: #555;
+	/* font-size: 3rem;
+	font-weight: 700;
+	border: 0.25rem solid #555;
+	display: inline-block; 
+	padding: 0.25rem 1rem;*/
+	text-transform: uppercase;
+	border-radius: 1rem;
+	/* font-family: 'Courier'; */
+	-webkit-mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/grunge.png');
+  -webkit-mask-size: 944px 604px;
+  mix-blend-mode: multiply;
+}

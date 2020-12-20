@@ -11,16 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- <script src="index.js"></script> -->
-<script>function myFunction() {
-  var x = document.getElementById("header");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
+<script src="index.js"></script>
 </head>
 
 <body>
@@ -36,10 +27,18 @@
 			<li><a href="errorPage.html">Hacking tools</a></li>
 			<li><a href="errorPage.html">Courses</a></li>
 		    <li><a href="hackingChallenges.html">Hacking challenges</a></li>
-			<li><a href="errorPage.html">Chat room</a></li>
-			<li class="logout"><a href="index.html"><input type="button" class="logoutbutton" value="Logout"></a></li>
+			<li><a href="errorPage.html">Chat room</a></li>			
+			<li class="profile"><a href="errorPage.html"><img src="img/profile-icon-white.png" class="skeleton-img center_img" alt="Profile icon" title="Profile icon"><p id="account">Tanja Pasma</p></a></li>	
+			<li><a id="logout" href="index.html"><input type="button" class="logoutbutton" value="Logout"></a></li>			
 			<li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
 		</ul>
+		<!-- <div class="login_container">
+			<div class="login_area">
+			<img src="img/profile-icon-white.png" class="skeleton-img center_img" alt="Profile icon" title="Profile icon">	
+			<p id="account">My account</p>
+			</div>
+			<a id="logout" href="index.html"><input type="button" class="logoutbutton" value="Logout"></a>
+		</div> -->
 	</div>
 </header>
 <!-- header ends here -->
@@ -133,7 +132,7 @@
         </li>
         <li class="twelve columns">
             <div class="designed"><a href="https://github.com/Tanja-P/EasierSaidThanRun">Designed with &#10084; (and skeleton) - by TaRo</a></div>
-        <div class="">© Social hacking. All rights reserved.</div>
+        <div class="">© <script> document.write(new Date().getFullYear()); </script> Social hacking. All rights reserved.</div>
         <div class="tor"><img src="img/torOnion.png" class="onionIcon" alt="Onion icon"> http://socialhackingkrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion</div>
         </li>	
         </ul>			

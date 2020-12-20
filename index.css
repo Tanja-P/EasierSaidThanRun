@@ -1,15 +1,3 @@
-/* html, body, div, span,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend {
-background: transparent;
-border: 0;
-margin: 0;
-padding: 0;
-font-family: Inconsolata, monospace !important;
-vertical-align: baseline ;
-} */
 body{
     font-family: Inconsolata, monospace !important;
     font-size: 1rem;
@@ -21,8 +9,9 @@ body{
 	margin:0;
 }
 
-/*COOKIE BANNER*/
+h1, h2, h3 {text-align: center;}
 
+/*COOKIE BANNER*/
 #cookieBanner {
   background-color: rgb(141, 141, 141);
   padding: 20px 20px 0px 20px;
@@ -49,9 +38,9 @@ padding: 5px;
 color: rgb(46, 15, 184); 
 text-decoration: underline;
 }
+/* END COOKIEBANNER */
 
-h1, h2, h3 {text-align: center;}
-
+/* SIGN UP FORM */
 .registerbox { background: #FBFCFD; padding: 10px; width: 490px; margin: 4% auto 4% auto; position: relative; }
 .registerBoxInner {
 background: #FBFCFD; padding: 5px; position: relative; border: 1px solid #FBFCFD;
@@ -100,7 +89,6 @@ color: #057BDD !important;
 background-color: rgb(0, 0, 0);
 border-bottom: 1px solid #c5c7c9;
 box-shadow: 0 0 2px rgba(0, 0, 0, 0.52);
-/* min-width: 1000px; */
 width: 100%;
 z-index: 1000;
 top: 0;
@@ -109,7 +97,6 @@ position: sticky;
 #header {
 margin-left:auto;
 margin-right:auto;
-/* max-width:1000px; */
 height: 85px;
 display: block;
 }
@@ -194,6 +181,10 @@ color: #057BDD !important;
   vertical-align: middle;
   position: relative;
   top: -15px; 
+  }
+  #loginStatus{
+  float:right; 
+  margin-top:25px;
   }
  /* SLUT HEADERN */
   

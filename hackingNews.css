@@ -14,12 +14,12 @@ background:black;
 min-height:85px;
 margin-bottom:40px;
 }
-#nav {
+/* #nav {
 text-align:center;
-}
+} */
 #nav li {
 display: inline-block;
-    margin: 34px 0 0;
+/*     margin: 34px 0 0; */
     vertical-align: middle;
 }
 #nav a {
@@ -34,6 +34,54 @@ float: left;
 .topnav .icon {
   display: none;
 }
+.login_container{
+position: absolute;
+right: calc(1.2% + 10px);
+top: 25px;
+display: inline-flex;
+width: auto;
+}
+.login_area{
+margin-top: -6px;
+}
+#account{
+color:white;
+font-size: 12px;
+}
+#logout{
+padding-left:25px;
+}
+.logoutbutton { 
+background-image:-webkit-linear-gradient(top, #000000, #057BDD);
+color: rgb(252, 252, 252); 
+border: 1px solid #c5c7c9;
+width: 95px;
+height: 35px;
+font-size: 14px;
+line-height: 25px; 
+font-weight: normal; 
+position: relative;
+padding: 0px !important;
+margin-bottom:0px;
+}
+.logoutbutton:hover { 
+color: #057BDD !important;
+-webkit-text-fill-color: #057BDD;
+}
+.logout{
+margin: 28px 0 0 !important;
+float:right;
+}
+.menu{
+text-align:right;
+}
+.profile{
+margin-left: 100px;
+margin-top: 25px;
+}
+li.profile > a{
+padding: 0px !important;
+}
 /* END HEADERN*/
 
  /* START BEADCRUMBS*/	
@@ -45,6 +93,7 @@ color: #057BDD !important;
 }
 /* END BEADCRUMBS*/	
 
+/* BACKGROUND */
 .background{
  position: relative;
   height: 100%;
@@ -61,6 +110,15 @@ color: #057BDD !important;
   -o-background-size: cover;
   background-size: cover;
 }
+/* END BACKGROUND */
+
+.search{
+background: url(img/search-icon-small.png) no-repeat right 10px center;
+float:right; 
+width:100%;
+}
+
+/* NEWS-CONTAINER */
 .datetime{
 color: #cdd6db;
 display: block;
@@ -86,8 +144,6 @@ background:white;
 }
 div.row.news-row > a{
 color: #211B24 !important;
-/* -webkit-text-fill-color: #211B24 !important;
--moz-text-fill-color: #211B24 !important; */
 }
 div.row.news-row > a:hover{
 -webkit-text-fill-color: #211B24 !important;
@@ -108,46 +164,7 @@ margin-bottom:3px;
 p.datetime{
 margin-bottom: 10px;
 }
-.datetime{
-color: #cdd6db;
-display: block;
-font-weight:bold;
-}
-/* #datetime:hover{
-color: #cdd6db !important;
--webkit-text-fill-color: #cdd6db !important;
--moz-text-fill-color: #cdd6db !important;
-} */
-.skeleton-img{
-display: block;
-max-width: 100%;
-height: auto;
-}
-.logoutbutton { 
-background-image:-webkit-linear-gradient(top, #000000, #057BDD);
-color: rgb(252, 252, 252); 
-border: 1px solid #c5c7c9;
-width: 95px;
-height: 35px;
-font-size: 14px;
-line-height: 25px; 
-font-weight: normal; 
-position: relative;
-padding: 0px !important;
-}
-.logoutbutton:hover { 
-color: #057BDD !important;
--webkit-text-fill-color: #057BDD;
-}
-.logout{
-margin: 25px 0 0 !important;
-float:right;
-}
-.search{
-background: url(img/search-icon-small.png) no-repeat right 10px center;
-float:right; 
-width:100%;
-}
+/* END NEWS-CONTAINER */
 
 /* HOVEREFFECT */
 .can-scale {
@@ -171,10 +188,20 @@ width:100%;
     display: block;
     padding: 1.25rem;
 }
-.is-clipped {
-    overflow: hidden !important;
-}
 /* END HOVEREFFECT */
+
+/* IMAGES */
+.skeleton-img{
+display: block;
+max-width: 100%;
+height: auto;
+}
+.center_img{
+display: block;
+margin-right: auto;
+margin-left: auto;
+}
+/* END IMAGES */
 
 /* START PAGINATION */
 .c-paginator {
@@ -237,7 +264,6 @@ a {
     font-weight: 700;
     text-transform: uppercase;
 }
-
 @media screen and (min-width: 48em){
 .c-paginator li {
     margin: .5rem .25rem;
@@ -297,10 +323,11 @@ a {
     }
     /* END FOOTER */
 	
+	
 /* 	MEDIA QUERIES */
 
 /* topnav */
-@media screen and (max-width: 925px) {
+@media screen and (max-width: 1250px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -308,6 +335,9 @@ a {
 	top: 34px;
   }
   #nav li:not(:last-child){display: none;}
+  
+  .login_area{display: none;}
+    .login_container{display: none;}
     .topnav a.icon {
     float: right;
     display: block;
@@ -324,14 +354,15 @@ a {
     display: block;
     text-align: left;
   }
-  .topnav.responsive #nav li, .logout{display: block;float: none;}
+/*   .topnav.responsive #nav li, .logout{display: block;float: none;} */
+  .topnav.responsive #nav li{display: block;float: none;}
   .topnav.responsive .menu{
 	padding-bottom: 10px;
   }
 .comment-area{
 	margin-left:0% !important;
 }  
-.logo{
+a .logo{
 float:none;
 }
 .menu{
@@ -342,9 +373,18 @@ position:absolute !important;
     top: 34px !important;
     right: 25px !important;
 }
-}
+
 .active{
 color: #057BDD;
+}
+.topnav.responsive .login_container{
+	bottom: 0;
+    margin-left: 0!important;
+    max-width: 280px;
+    position: absolute;
+    width: 100%;
+	display:block;
+	float:none;
 }
 }
 /* end topnav */

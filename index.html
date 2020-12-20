@@ -9,7 +9,7 @@
 <link rel="icon" type="image/png" href="img/favicon.png">
 <link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="skeleton.css">
-<script src="index.js"></script>
+<!-- <script src="index.js"></script> -->
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"> 
 </head>
 
@@ -17,15 +17,20 @@
 <!-- header starts here -->
 <div id="header_wrapper">
     <header class="header" id="header">
-    <a class="logo"><img src="img/Logo.png" class="skeleton-img" alt="Social hacking logo" title="Social hacking logo"></a>	
-   <form method="post" action="" id="login_form" name="login_form">
+    <a class="logo"><img src="img/Logo.png" class="skeleton-img" alt="Social hacking logo" title="Social hacking logo"></a>	  
+   <form method="post" action="hackingNews.html" id="login_form" name="login_form" onsubmit="return checkLogin()">
+	<ul>	
+    <li><input type="text" tabindex="1" id="userName" placeholder="Username" name="email" class="inputtext radius1" value=""></li>
+    <li><input type="password" tabindex="2" id="passWord" placeholder="Password" name="pass" class="inputtext radius1"></li>
+    <li>
+	<a href="hackingNews.html"><input type="submit" class="loginbutton" name="login" value="Login"></a></li>
+	</ul>
     <ul>
-    <li><input type="text" tabindex="1" id="email" placeholder="Username" name="email" class="inputtext radius1" value=""></li>
-    <li><input type="password" tabindex="2" id="pass" placeholder="Password" name="pass" class="inputtext radius1"></li>
-    <li><a href="hackingNews.html"><input type="button" class="loginbutton" name="login" value="Login"></a></li></ul>
-    <ul><li><label><input id="logincheckbox" type="checkbox" name="persistent" value="1" checked="1"/>Keep me logged in</label><li>
-    <li><label><a href="">Forgot your password?</a></label></li></ul>
+	<li><label><input id="logincheckbox" type="checkbox" name="persistent" value="1" checked="1"/>Keep me logged in</label><li>
+    <li><label><a href="">Forgot your password?</a></label></li>
+	</ul>	
     </form>
+	<div id="loginStatus" style="float:right; margin-top:25px;"></div>
     </header>
    </div>
 <!-- header ends here -->
@@ -38,7 +43,6 @@
 </div>
 
 <div class="container" style="min-height: calc(100vh - 252px);">
-<div class="row">
 <div class="row">
 <div class="twelve columns">
 
@@ -77,6 +81,7 @@
 </div>
 </div>
 
+<!-- Cookiebanner -->
 <div class="twelve columns">
     <div id="cookieBanner">
         <h3>This site uses cookies</h3> This website uses 🍪 to ensure you get the best experience on our website.  
@@ -90,10 +95,12 @@
         <button class="js-cookie-dismiss" onclick="closeS()">Use only necessary</button>
         <a class="cookiepol" href="privacyPolicy.html">Cookie Policy and settings</a>
     </div>
-    </div>
+ </div>
+	<!--End cookiebanner-->   
 </div>
 </div>
 
+<!-- Footer -->
 <footer class="main-footer">
     <div class="footer-wrap">	     
         <ul class="row footer-row">        
@@ -110,12 +117,35 @@
         </li>
         <li class="twelve columns">
             <div class="designed"><a href="https://github.com/Tanja-P/EasierSaidThanRun">Designed with &#10084; (and skeleton) - by TaRo</a></div>
-        <div class="">© Social hacking. All rights reserved.</div>
+        <div class="">� Social hacking. All rights reserved.</div>
         <div class="tor"><img src="img/torOnion.png" class="onionIcon" alt="Onion icon"> http://socialhackingkrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion</div>
         </li>	
         </ul>			
     </div>
-</footer>
+</footer> <!-- End footer -->
 
 </body>
+<script src="index.js"></script>
+<!-- <script>
+var modal = document.querySelector('.modal');
+var closeButtons = document.querySelectorAll('.close-modal');
+// set open modal behaviour
+document.querySelector('.open-modal').addEventListener('click', function() {
+  modal.classList.toggle('modal-open');
+});
+// set close modal behaviour
+for (i = 0; i < closeButtons.length; ++i) {
+  closeButtons[i].addEventListener('click', function() {
+    modal.classList.toggle('modal-open');
+	});
+}
+// close modal if clicked outside content area
+document.querySelector('.modal-inner').addEventListener('click', function() {
+  modal.classList.toggle('modal-open');
+});
+// prevent modal inner from closing parent when clicked
+document.querySelector('.modal-content').addEventListener('click', function(e) {
+	e.stopPropagation();
+});
+</script> -->
 </html>

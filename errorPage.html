@@ -7,15 +7,19 @@
 <meta name="description" content="Error page">
 <link rel="icon" type="image/png" href="img/favicon.png">
 <link rel="stylesheet" href="hackingNews.css">
+<link rel="stylesheet" href="errorpage.css">
 <link rel="stylesheet" href="skeleton.css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"> 
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">  -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="index.js"></script>
 </head>
 
 <body>
-<div class="background">
+<div class="wrapper">
 <!-- header starts here -->
 <header class="topnav" id="header">  
 <a class="logo"><img src="img/Logo.png" class="skeleton-img" alt="Social hacking logo" title="Social hacking logo"></a>	
@@ -27,25 +31,24 @@
 			<li><a href="errorPage.html">Hacking tools</a></li>
 			<li><a href="errorPage.html">Courses</a></li>
 		    <li><a href="hackingChallenges.html">Hacking challenges</a></li>
-			<li><a href="errorPage.html">Chat room</a></li>
-			<li class="logout"><a href="index.html"><input type="button" class="logoutbutton" value="Logout"></a></li>
+			<li><a href="errorPage.html">Chat room</a></li>			
+			<li class="profile"><a href="errorPage.html"><img src="img/profile-icon-white.png" class="skeleton-img center_img" alt="Profile icon" title="Profile icon"><p id="account">Tanja Pasma</p></a></li>	
+			<li><a id="logout" href="index.html"><input type="button" class="logoutbutton" value="Logout"></a></li>			
 			<li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
 		</ul>
 	</div>
 </header>
 <!-- header ends here -->
 
-<div class="container" style="min-height: calc(100vh - 272px);">
-	<h1>No page found</h1>
+<div class="container errorPage stamp" id="errorPage">
+	<h1 class="pageNotFound headertext">Under construction</h1>
 	<div class="row">
 		<div class="twelve columns">
-		<h2>This page is under construction!</h2>
+		<h2 class="pageNotFound subtext">coming soon</h2>
 		</div>
 	</div>
-	<!-- <div class="under-construction-image">
-	</div> -->
 </div>
-
+</div>
 <footer class="main-footer">
     <div class="footer-wrap">	     
         <ul class="row footer-row">        
@@ -68,7 +71,7 @@
         </ul>			
     </div>
 </footer>
-</div>
 
 </body>
+<script src="errorPage.js"></script>
 </html>
