@@ -93,15 +93,26 @@ function postComment() {
 	// give the P tag a class 
 	userCommentArea.classList.add( "userCommentArea" );
 	
-	// get the current timestamp
+	// get the current timestamp in right format
 	let date = new Date();  
 	let options = {  
 		weekday: "long", year: "numeric", month: "short",  
 		day: "numeric", hour: "2-digit", minute: "2-digit"  
 	};  
-
-	document.getElementById( "comments_timestamp" ).innerHTML = "TANJA on" + " " + date.toLocaleTimeString("en-us", options);
 	
+	// create p tag for timestamp text
+		let timeStampArea = document.createElement("P");
+
+	// document.getElementById( "comments_timestamp" ).innerHTML = "TANJA on" + " " + date.toLocaleTimeString("en-us", options);
+		let timestamp = "TANJA on" + " " + date.toLocaleTimeString("en-us", options);
+		// set the timestamp as text
+		let timestampText = document.createTextNode( timestamp );
+		//add text to p tag
+		timeStampArea.appendChild(timestampText);
+
+		//get the timestamp id and add the timestamp text to it
+	document.getElementById( "comments_timestamp" ).appendChild(timeStampArea);
+
 	// get the comment p id and add the Comment to it
 	document.getElementById( "comments_content" ).appendChild( userCommentArea );
 	// set Answer

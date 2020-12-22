@@ -327,7 +327,7 @@ a {
 /* 	MEDIA QUERIES */
 
 /* topnav */
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1322px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -385,6 +385,13 @@ color: #057BDD;
     width: 100%;
 	display:block;
 	float:none;
+}
+.center_img {
+    margin-left: 25px;
+}
+.profile{
+margin: 0 !important;
+padding-left: 10px;
 }
 }
 /* end topnav */
