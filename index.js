@@ -25,6 +25,8 @@ window.addEventListener('scroll', function () {
         }
       }
 	  
+	  
+	// LOGIN
 var loginUser = "tanja";
 var loginPassword = "tanja";
 var loginCount = 1;
@@ -76,7 +78,69 @@ function checkLogin() {
 		return false;
 	}
 }
+function postComment() {
+	// create a P tag to become the comment
+	let userCommentArea = document.createElement("P");
+	
+	// Get the "userInput" from the form 
+	let userComment = document.getElementById( "messageInput" ).value;
+	
+	//set the userInput as content
+	let userText = document.createTextNode( userComment );
+	
+	// add that text to the P tag
+	userCommentArea.appendChild( userText );
+	// give the P tag a class 
+	userCommentArea.classList.add( "userCommentArea" );
+	
+	// get the current timestamp
+	let date = new Date();  
+	let options = {  
+		weekday: "long", year: "numeric", month: "short",  
+		day: "numeric", hour: "2-digit", minute: "2-digit"  
+	};  
 
+	document.getElementById( "comments_timestamp" ).innerHTML = "TANJA on" + " " + date.toLocaleTimeString("en-us", options);
+	
+	// get the comment p id and add the Comment to it
+	document.getElementById( "comments_content" ).appendChild( userCommentArea );
+	// set Answer
+	document.getElementById( "answer" ).innerHTML = "Answer >";
+	// delete input text after post
+	document.getElementById( "messageInput" ).value = "";
+	
+}
+
+
+var scroll = window.requestAnimationFrame ||
+            function(callback){ window.setTimeout(callback, 1000/60)};
+			var elementsToShow = document.querySelectorAll('.show-on-scroll');
+			
+function loop() {
+
+  elementsToShow.forEach(function (element) {
+    if (isElementInViewport(element)) {
+      element.classList.add('is-visible');
+    } else {
+      element.classList.remove('is-visible');
+    }
+  });
+
+  scroll(loop);
+}
+
+const callback = function(entries) {
+  entries.forEach(entry => {
+    entry.target.classList.toggle("is-visible");
+  });
+};
+
+const observer = new IntersectionObserver(callback);
+
+const targets = document.querySelectorAll(".show-on-scroll");
+targets.forEach(function(target) {
+  observer.observe(target);
+});
 // var modal = document.querySelector('.modal');
 // var closeButtons = document.querySelectorAll('.close-modal');
 // // set open modal behaviour

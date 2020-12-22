@@ -69,7 +69,7 @@
 			<li>
 				<div class="comment">								
 					<div class="comment-meta">					
-						<span class="comment-author">Tanja</span> on november 20, 2020 9:57 e m
+						<span class="comment-author">Tanja</span> on Wednesday, Nov 20, 2020 9:57 AM
 					</div>
 					<div class="comment-content">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
@@ -81,6 +81,9 @@
 				</div>
 			</li>
 		</ol>
+		<div style="border-top: 1px solid grey;" class="comment-meta" id="comments_timestamp"></div>
+		<div style="line-height: 1.2;" class="comment-content" id="comments_content"></div>
+		<div style="margin-bottom:20px;" class="comment-reply-link" id="answer"></div>
 		
 	<div class="respond">
 	<h3 class="section-head">Comment</h3>
@@ -96,7 +99,7 @@
 			  </div>
 			</div> -->
 			<textarea class="u-full-width" placeholder="Your comment" id="messageInput"></textarea>
-			<input class="button u-pull-right comment-submit" type="submit" value="Post comment">
+			<input class="button u-pull-right comment-submit" type="button" value="Post comment" onclick="postComment()";>
 		  </form>
 		</div>
 		<p>Info about spam-service.<a href="https://cleantalk.org/publicoffer#privacy" target="_blank" rel="nofollow noopener"> Learn how your comment data is handled.</a></p>

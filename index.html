@@ -30,7 +30,7 @@
     <li><label><a href="">Forgot your password?</a></label></li>
 	</ul>	
     </form>
-	<div id="loginStatus" style="float:right; margin-top:25px;"></div>
+	<div id="loginStatus"></div>
     </header>
    </div>
 <!-- header ends here -->
@@ -117,7 +117,7 @@
         </li>
         <li class="twelve columns">
             <div class="designed"><a href="https://github.com/Tanja-P/EasierSaidThanRun">Designed with &#10084; (and skeleton) - by TaRo</a></div>
-        <div class="">© Social hacking. All rights reserved.</div>
+        <div class="">© <script> document.write(new Date().getFullYear()); </script> Social hacking. All rights reserved.</div>
         <div class="tor"><img src="img/torOnion.png" class="onionIcon" alt="Onion icon"> http://socialhackingkrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion</div>
         </li>	
         </ul>			
@@ -126,26 +126,4 @@
 
 </body>
 <script src="index.js"></script>
-<!-- <script>
-var modal = document.querySelector('.modal');
-var closeButtons = document.querySelectorAll('.close-modal');
-// set open modal behaviour
-document.querySelector('.open-modal').addEventListener('click', function() {
-  modal.classList.toggle('modal-open');
-});
-// set close modal behaviour
-for (i = 0; i < closeButtons.length; ++i) {
-  closeButtons[i].addEventListener('click', function() {
-    modal.classList.toggle('modal-open');
-	});
-}
-// close modal if clicked outside content area
-document.querySelector('.modal-inner').addEventListener('click', function() {
-  modal.classList.toggle('modal-open');
-});
-// prevent modal inner from closing parent when clicked
-document.querySelector('.modal-content').addEventListener('click', function(e) {
-	e.stopPropagation();
-});
-</script> -->
 </html>
