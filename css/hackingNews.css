@@ -99,7 +99,7 @@ color: #057BDD !important;
   height: 100%;
  }
 .background:before {
-  background-image:  url(img/Background.jpg);
+  background-image:  url(../img/Background.jpg);
   content: '';
   position: absolute;
   left: 0; right: 0; top: 0; bottom: 0;
@@ -113,7 +113,7 @@ color: #057BDD !important;
 /* END BACKGROUND */
 
 .search{
-background: url(img/search-icon-small.png) no-repeat right 10px center;
+background: url(../img/search-icon-small.png) no-repeat right 10px center;
 float:right; 
 width:100%;
 }

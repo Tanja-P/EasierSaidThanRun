@@ -129,18 +129,34 @@ function postComment() {
 
 function showLoginName() {
 	//get the user name in url
-var userNameEncoded = location.search.split("param=")[1];
+let userNameEncoded = location.search.split("param=")[1];
 //decode the user name
-var userName = decodeURIComponent(userNameEncoded);
-	// // create a P tag to become the login name
-	let loginNameArea = document.createElement("P");
-	// //set the userInput as content
-	let user = document.createTextNode( userName );
-	console.log(user);
-	// // add that text to the P tag
-	loginNameArea.appendChild( user );
-	// // give the P tag a class 
-	loginNameArea.classList.add( "loginNameArea" );
-	// // get the login name p id and add the name to it
-	document.getElementById( "account" ).appendChild( loginNameArea );
+let userName = decodeURIComponent(userNameEncoded);
+let cookie = document.cookie;
+//cookie="username=userName; expires=Thu, 18 Dec 2021 12:00:00 UTC; path=/";
+ cookie = userName;
+	document.getElementById( "account" ).innerHTML = cookie;
+
+
+	// create a P tag to become the login name
+	//let loginNameArea = document.createElement("P");
+	// set the userInput as content
+	//let user = document.createTextNode( userName );
+	// add that text to the P tag
+	//loginNameArea.appendChild( user );
+	// give the P tag a class 
+	//loginNameArea.classList.add( "loginNameArea" );
+	// get the login name p id and add the name to it
+	//document.getElementById( "account" ).appendChild( loginNameArea );
+}
+function getCookie() {
+	// this is how you can get a cookie
+	let cookie = document.cookie;
+	// print it
+	console.log(cookie);
+	// get the value of the username out
+	//console.log(cookie.split("=")[1]);
+	// split it on the "=" and use the second part
+	// put it somewhere on a page
+	document.getElementById("account").innerHTML = cookie;
 }

@@ -9,9 +9,9 @@ body{
 	margin:0;
 }
 
-p {
+/* p {
 text-align: center;
-}
+} */
 
 .challA {
 color: #0E5B8E !important; 
@@ -30,62 +30,21 @@ color: #0E5B8E !important;
   margin-top: 10px;     
 }
 
-.skeleton-img{
+/* .skeleton-img{
   display: block;
   max-width: 100%;
   height: auto;
   width: 400px;
   height: 209px; 
   }
-
-    /* HEADERN*/
-#header{
-    background:black;
-    min-height:85px;
-    margin-bottom:40px;
-    }
-    #nav {
-    text-align:center;
-    }
-    #nav li {
-    display: inline-block;
-        margin: 34px 0 0;
-        vertical-align: middle;
-    }
-    #nav a {
-    text-decoration:none; 
-    padding:0 30px; /* variable width */
-    }
-    .logo{
-    float: left;
-      position: relative;
-      text-decoration:none; 
-    }
-    .topnav .icon {
-      display: none;
-    }
-    /* END HEADERN*/
-
-
-
-        /* START BEADCRUMBS*/	
-.breadcrumbs {
-    margin-bottom: 20px;
-    }
-    .breadcrumbs > a {
-    color: #057BDD !important;
-    }
-    /* END BEADCRUMBS*/	
-    
-
-
+ */
     .background{
      position: relative;
       height: 100%;
      }
      
     .background:before {
-      background-image:  url(img/Background.jpg);
+      background-image:  url(../img/Background.jpg);
       content: '';
       position: absolute;
       left: 0; right: 0; top: 0; bottom: 0;
@@ -176,7 +135,7 @@ color: #0E5B8E !important;
       float:right;
       }
       .search{
-      background: url(img/search-icon-small.png) no-repeat right 10px center;
+      background: url(../img/search-icon-small.png) no-repeat right 10px center;
       float:right; 
       width:100%;
       }

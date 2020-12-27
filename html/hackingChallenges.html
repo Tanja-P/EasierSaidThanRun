@@ -5,41 +5,42 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Challenges for hackers">
-<link rel="icon" type="image/png" href="img/favicon.png">
-<link rel="stylesheet" href="hackingchallenges.css">
-<link rel="stylesheet" href="skeleton.css">
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<link rel="stylesheet" href="../css/hackingchallenges.css">
+<link rel="stylesheet" href="../css/hackingNews.css">
+<link rel="stylesheet" href="../css/skeleton.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="index.js"></script>
 </head>
 
-<body>
+<body onload="getCookie()">
     <div class="background">
-        <!-- header starts here -->
-        <header class="topnav" id="header">  
-<a class="logo"><img src="img/Logo.png" alt="Social hacking logo" title="Social hacking logo"></a>	
+<!-- header starts here -->
+<header class="topnav" id="header">  
+<a class="logo"><img src="../img/Logo.png" class="skeleton-img" alt="Social hacking logo" title="Social hacking logo"></a>	
 	<div class="menu">
 		<ul id="nav">
-			<li><a href="errorPage.html">Home</a></li>
-			<li><a href="errorPage.html">About</a></li>
-			<li><a href="hackingNews.html">Hacking news</a></li>
-			<li><a href="errorPage.html">Hacking tools</a></li>
-			<li><a href="errorPage.html">Courses</a></li>
-		    <li><a href="hackingChallenges.html">Hacking challenges</a></li>
-			<li><a href="errorPage.html">Chat room</a></li>
-			<li class="logout"><a href="index.html"><input type="button" class="logoutbutton" value="Logout"></a></li>
+			<li><a href="../html/errorPage.html">Home</a></li>
+			<li><a href="../html/errorPage.html">About</a></li>
+			<li><a href="../html/hackingNews.html">Hacking news</a></li>
+			<li><a href="../html/errorPage.html">Hacking tools</a></li>
+			<li><a href="../html/errorPage.html">Courses</a></li>
+		    <li><a href="../html/hackingChallenges.html">Hacking challenges</a></li>
+			<li><a href="../html/errorPage.html">Chat room</a></li>			
+			<li class="profile"><a href="../html/errorPage.html"><img src="../img/profile-icon-white.png" class="skeleton-img center_img" alt="Profile icon" title="Profile icon"><p id="account"></p></a></li>	
+			<li><a id="logout" href="../html/index.html"><input type="button" class="logoutbutton" value="Logout"></a></li>			
 			<li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
 		</ul>
 	</div>
 </header>
-        <!-- header ends here -->
+<!-- header ends here -->
        
         <div class="container news-container">
             <div class="row">
             <div class="wrap">
                     <div class="breadcrumbs eight columns">
-                    <a href="index.html"><span>Home </span></a>
+                    <a href="../html/index.html"><span>Home </span></a>
                     <span>»</span><span class="current">  Hacking Challenges</span>
                     </div>
                     
@@ -49,10 +50,11 @@
             </div>
             </div>
 
-            <h2 class="label">Hacking challenges</h2><h3 class="label2">Coders can post their own challenges here, or simply link existing ones, for other people to compete in.</h3>
+            <h2 class="label">Hacking challenges</h2>
+			<h3 class="label2">Coders can post their own challenges here, or simply link existing ones, for other people to compete in.</h3>
            
             <div class="row news-row box is-clipped has-shadow-lift can-scale">
-                    <div class="five columns"><img src="img/hackPentagon.png" alt="Challenge img" title="Challenge image" class="skeleton-img">
+                    <div class="five columns"><img src="../img/hackPentagon.png" alt="Challenge img" title="Challenge image" class="skeleton-img">
                     </div><div class="seven columns">
                     <strong><p>Hack the Pentagon — US Government Challenges Hackers to Break its Security</p></strong>
                        <p class="datetime" id="datetime">20/11/2020 - <span><i class="fa fa-comments-o"></i> 2</span></p>
@@ -60,9 +62,7 @@
                        <p>#pentagon #endbosslvl #bigcheese</p>
                 </div>
                 </div>
-
-
-                
+               
                 <div class="row article-row">		
                 <div class="twelve columns">
                     <div class="comments">
@@ -94,15 +94,10 @@
                                         </div>					
                                     </div>
                                 </div>
-
-
-
-
                             </li>
                         </ol>
                         
-                    <div class="respond">
-                
+                    <div class="respond">               
                         <div class="twelve columns comment-form">
                           <form>
                             <!-- <div class="row">
@@ -124,18 +119,14 @@
                 <hr>		
                 </div>
     
-
-
-
                 <div class="container news-container">
                     <div class="row">
                     <div class="wrap">
                     </div>
-                    </div>
-        
+                    </div>        
 
                 <div class="row news-row box is-clipped has-shadow-lift can-scale">
-                    <div class="five columns"><img src="img/hackthis.png" alt="Challenge img" title="Challenge image" class="skeleton-img">
+                    <div class="five columns"><img src="../img/hackthis.png" alt="Challenge img" title="Challenge image" class="skeleton-img">
                     </div><div class="seven columns">
                     <strong><p>Players play the Blackhat hacker scenario, “hired to track down another hacker by any means possible.</p></strong>
                     <p class="datetime">26/11/2020 - <span><i class="fa fa-comments-o"></i> 0</span></p>
@@ -144,18 +135,14 @@
 
                 </div>
                 </div>
-
-
                
                 <div class="row article-row">		
                 <div class="twelve columns">
                     <div class="comments">
                         <h3 class="section-head">0 comment(s)</h3>
-
-                        
+                    
                     <div class="respond">
-                   
-                
+                                  
                         <div class="twelve columns comment-form">
                           <form>
                             <!-- <div class="row">
@@ -177,7 +164,6 @@
                 <hr>			
                 </div>
 
-
                 <div class="container news-container">
                     <div class="row">
                     <div class="wrap">
@@ -185,29 +171,20 @@
                     </div>
 
                 <div class="row news-row box is-clipped has-shadow-lift can-scale">
-                    <div class="five columns"><img src="img/JuiceShop.jpg" alt="Challenge img" title="Challenge image" class="skeleton-img">
+                    <div class="five columns"><img src="../img/JuiceShop.jpg" alt="Challenge img" title="Challenge image" class="skeleton-img">
                     </div><div class="seven columns">
                     <strong><p>An intentionally insecure JavaScript Web Application</p></strong>
                        <p class="datetime" id="datetime">31/11/2020 - <span><i class="fa fa-comments-o"></i> 0</span></p>
                        <p>This intentionally insecure JavaScript Web Application was created by Björn Kimminich (@bkimminich) and is great for anyone coding or testing
                         JavaScript that doesn’t understand all its security issues to watch out for. With both local and containerized environments available, 
-                        Juice Shop is perfect for a fun challenge.</p>
-
-                       
+                        Juice Shop is perfect for a fun challenge.</p>                      
                 </div>
-                </div>
-
-
-                
+                </div>                
                 <div class="row article-row">		
                 <div class="twelve columns">
                     <div class="comments">
-                        <h3 class="section-head">0 comment(s)</h3>
-
-                        
-                    <div class="respond">
-                    
-                
+                        <h3 class="section-head">0 comment(s)</h3>                      
+                    <div class="respond">                                   
                         <div class="twelve columns comment-form">
                           <form>
                             <!-- <div class="row">
@@ -235,23 +212,24 @@
         <ul class="row footer-row">        
         <li class="twelve columns">
         <div class="footer-links">
-        <a href="errorPage.html" rel="nofollow">About</a> | 
-        <a href="errorPage.html" rel="nofollow">Apply for work</a> |
-        <a href="errorPage.html" rel="nofollow">Advertising</a> |
-        <a href="contact.html" rel="nofollow">Contact</a> |
-        <a href="errorPage.html" rel="nofollow">FAQ</a> |
-        <a href="privacyPolicy.html" rel="nofollow">Privacy policy</a> |
-		<a href="errorPage.html">Subscribe to newsletter</a>
+        <a href="../html/errorPage.html" rel="nofollow">About</a> | 
+        <a href="../html/errorPage.html" rel="nofollow">Apply for work</a> |
+        <a href="../html/errorPage.html" rel="nofollow">Advertising</a> |
+        <a href="../html/contact.html" rel="nofollow">Contact</a> |
+        <a href="../html/errorPage.html" rel="nofollow">FAQ</a> |
+        <a href="../html/privacyPolicy.html" rel="nofollow">Privacy policy</a> |
+		<a href="../html/errorPage.html">Subscribe to newsletter</a>
         </div>
         </li>
         <li class="twelve columns">
             <div class="designed"><a href="https://github.com/Tanja-P/EasierSaidThanRun">Designed with &#10084; (and skeleton) - by TaRo</a></div>
         <div class="">© Social hacking. All rights reserved.</div>
-        <div class="tor"><img src="img/torOnion.png" class="onionIcon" alt="Onion icon"> http://socialhackingkrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion</div>
+        <div class="tor"><img src="../img/torOnion.png" class="onionIcon" alt="Onion icon"> http://socialhackingkrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion</div>
         </li>	
         </ul>			
     </div>
 </footer>
         </div>
     </body>
+	<script src="../js/index.js"></script>
 </html>
