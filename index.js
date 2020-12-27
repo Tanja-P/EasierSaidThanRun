@@ -27,27 +27,28 @@ window.addEventListener('scroll', function () {
 	  
 	  
 	// LOGIN
-var loginUser = "tanja";
+	//set user login name
+var loginUser = "Tanja Pasma";
+	//set login password
 var loginPassword = "tanja";
+//counter
 var loginCount = 1;
+//maximum no of attempts
 var attempt = 3;
-// this is what is called from the onsubmit
-function checkLogin() {
-	var userName = document.getElementById("userName").value;
-	var passWord = document.getElementById("passWord").value;
-	console.log(userName);
-			console.log(passWord);
-	//first check if the user is below the max number of attempts
-	 if (loginCount <= attempt) {
-	console.log("check nr of attempts");
-		// Check if the username is correct
-		if (userName != loginUser || passWord != loginPassword) {
-			// make a variabel to hold the number of attempts left
-			attempt--;
-			console.log(attempt);
-			console.log(userName);
-			console.log(passWord);
 
+// this is what is called from the on submit
+function checkLogin() {
+//get the value of user name input
+	var userName = document.getElementById("userName").value;
+	//get the value of password input
+	var passWord = document.getElementById("passWord").value;
+	//first check if the user is below the maximum number of attempts
+	 if (loginCount <= attempt) {
+		// Check if the user name is correct
+		if (userName != loginUser || passWord != loginPassword) {
+			// make a variable to hold the number of attempts left
+			attempt--;
+			
 			//inform the user if incorrect details
 			document.getElementById("loginStatus").innerHTML = "Incorrect details. You have " + attempt + " attempts left!";
 			document.getElementById("loginStatus").style.color = "red";
@@ -64,11 +65,10 @@ function checkLogin() {
 			// then return false, so that the submit action won't run
 			return false;			
 			 } else {
-			 console.log("true");
-				// if there is something in the password, return true so the submit action happens
-				return true;
+				// if correct login details redirect to new page with parameter userName
+				document.getElementById("login_form").action = "hackingNews.html?param=" + userName;
+				//return true;				
 			}
-
 	} else {
 		// if the user is above the max changes for the password check they are locked out
 		// inform the user of how its going for them
@@ -78,6 +78,7 @@ function checkLogin() {
 		return false;
 	}
 }
+
 function postComment() {
 	// create a P tag to become the comment
 	let userCommentArea = document.createElement("P");
@@ -102,8 +103,7 @@ function postComment() {
 	
 	// create p tag for timestamp text
 		let timeStampArea = document.createElement("P");
-
-	// document.getElementById( "comments_timestamp" ).innerHTML = "TANJA on" + " " + date.toLocaleTimeString("en-us", options);
+		// the format of timestamp text
 		let timestamp = "TANJA on" + " " + date.toLocaleTimeString("en-us", options);
 		// set the timestamp as text
 		let timestampText = document.createTextNode( timestamp );
@@ -111,65 +111,36 @@ function postComment() {
 		timeStampArea.appendChild(timestampText);
 
 		//get the timestamp id and add the timestamp text to it
-	document.getElementById( "comments_timestamp" ).appendChild(timeStampArea);
+		document.getElementById( "comments_timestamp" ).appendChild(timeStampArea);
 
-	// get the comment p id and add the Comment to it
-	document.getElementById( "comments_content" ).appendChild( userCommentArea );
-	// set Answer
-	document.getElementById( "answer" ).innerHTML = "Answer >";
-	// delete input text after post
-	document.getElementById( "messageInput" ).value = "";
+		// get the comment p id and add the Comment to it
+		document.getElementById( "comments_content" ).appendChild( userCommentArea );
+		
+		//add inline styling - top border
+		document.getElementById("comments_timestamp").style.borderTop = "thin solid grey";
+		// set Answer
+		document.getElementById( "answer" ).innerHTML = "Answer >";
+		//set no of comments
+		document.getElementById("section-head").innerHTML = "2 comments";
+		// delete input text after post
+		document.getElementById( "messageInput" ).value = "";
 	
 }
 
-
-var scroll = window.requestAnimationFrame ||
-            function(callback){ window.setTimeout(callback, 1000/60)};
-			var elementsToShow = document.querySelectorAll('.show-on-scroll');
-			
-function loop() {
-
-  elementsToShow.forEach(function (element) {
-    if (isElementInViewport(element)) {
-      element.classList.add('is-visible');
-    } else {
-      element.classList.remove('is-visible');
-    }
-  });
-
-  scroll(loop);
+function showLoginName() {
+	//get the user name in url
+var userNameEncoded = location.search.split("param=")[1];
+//decode the user name
+var userName = decodeURIComponent(userNameEncoded);
+	// // create a P tag to become the login name
+	let loginNameArea = document.createElement("P");
+	// //set the userInput as content
+	let user = document.createTextNode( userName );
+	console.log(user);
+	// // add that text to the P tag
+	loginNameArea.appendChild( user );
+	// // give the P tag a class 
+	loginNameArea.classList.add( "loginNameArea" );
+	// // get the login name p id and add the name to it
+	document.getElementById( "account" ).appendChild( loginNameArea );
 }
-
-const callback = function(entries) {
-  entries.forEach(entry => {
-    entry.target.classList.toggle("is-visible");
-  });
-};
-
-const observer = new IntersectionObserver(callback);
-
-const targets = document.querySelectorAll(".show-on-scroll");
-targets.forEach(function(target) {
-  observer.observe(target);
-});
-// var modal = document.querySelector('.modal');
-// var closeButtons = document.querySelectorAll('.close-modal');
-// // set open modal behaviour
-// document.querySelector('.open-modal').addEventListener('click', function() {
-  // modal.classList.toggle('modal-open');
-  // console.log("modal open");
-// });
-// // set close modal behaviour
-// for (i = 0; i < closeButtons.length; ++i) {
-  // closeButtons[i].addEventListener('click', function() {
-    // modal.classList.toggle('modal-open');
-	// });
-// }
-// // close modal if clicked outside content area
-// document.querySelector('.modal-inner').addEventListener('click', function() {
-  // modal.classList.toggle('modal-open');
-// });
-// // prevent modal inner from closing parent when clicked
-// document.querySelector('.modal-content').addEventListener('click', function(e) {
-	// e.stopPropagation();
-// });
