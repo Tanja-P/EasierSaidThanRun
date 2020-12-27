@@ -31,7 +31,7 @@ window.addEventListener('scroll', function () {
 var loginUser = "Tanja Pasma";
 	//set login password
 var loginPassword = "tanja";
-//counter
+//login counter
 var loginCount = 1;
 //maximum no of attempts
 var attempt = 3;
@@ -51,6 +51,7 @@ function checkLogin() {
 			
 			//inform the user if incorrect details
 			document.getElementById("loginStatus").innerHTML = "Incorrect details. You have " + attempt + " attempts left!";
+			//make the text red by js inline styling
 			document.getElementById("loginStatus").style.color = "red";
 			
 			// update the count for each failed password check
@@ -116,13 +117,13 @@ function postComment() {
 		// get the comment p id and add the Comment to it
 		document.getElementById( "comments_content" ).appendChild( userCommentArea );
 		
-		//add inline styling - top border
+		//add inline styling - top border to separate comments
 		document.getElementById("comments_timestamp").style.borderTop = "thin solid grey";
-		// set Answer
+		// set Answer text
 		document.getElementById( "answer" ).innerHTML = "Answer >";
-		//set no of comments
+		//change text for no of comments
 		document.getElementById("section-head").innerHTML = "2 comments";
-		// delete input text after post
+		// delete input text
 		document.getElementById( "messageInput" ).value = "";
 	
 }
@@ -132,11 +133,12 @@ function showLoginName() {
 let userNameEncoded = location.search.split("param=")[1];
 //decode the user name
 let userName = decodeURIComponent(userNameEncoded);
+//make cookie
 let cookie = document.cookie;
-//cookie="username=userName; expires=Thu, 18 Dec 2021 12:00:00 UTC; path=/";
+//set userName as cookie";
  cookie = userName;
+ //set the p tag with id "account" to cookie = user name
 	document.getElementById( "account" ).innerHTML = cookie;
-
 
 	// create a P tag to become the login name
 	//let loginNameArea = document.createElement("P");
@@ -150,13 +152,8 @@ let cookie = document.cookie;
 	//document.getElementById( "account" ).appendChild( loginNameArea );
 }
 function getCookie() {
-	// this is how you can get a cookie
+	// get cookie
 	let cookie = document.cookie;
-	// print it
-	console.log(cookie);
-	// get the value of the username out
-	//console.log(cookie.split("=")[1]);
-	// split it on the "=" and use the second part
-	// put it somewhere on a page
+	// put it on p tag with id "account"
 	document.getElementById("account").innerHTML = cookie;
 }
