@@ -16,7 +16,8 @@
 <!-- header starts here -->
 <div id="header_wrapper">
     <header class="header" id="header">
-    <a class="logo"><img src="../img/Logo.png" class="skeleton-img" alt="Social hacking logo" title="Social hacking logo"></a>	  
+    <a class="logo"><img src="../img/Logo.png" class="skeleton-img" alt="Social hacking logo" title="Social hacking logo"></a>	 
+<!-- form for login -->	
    <form method="post" action="" id="login_form" name="login_form" onsubmit="return checkLogin()">
 	<ul>	
     <li><input type="text" tabindex="1" id="userName" placeholder="Username" name="email" class="inputtext radius1" value=""></li>
@@ -29,7 +30,10 @@
     <li><label><a href="">Forgot your password?</a></label></li>
 	</ul>	
     </form>
+	<!-- form end  -->
+	<!-- show error message if incorrect log in -->
 	<div id="loginStatus"></div>
+	<!-- error message end -->
     </header>
    </div>
 <!-- header ends here -->
@@ -44,7 +48,7 @@
 <div class="container" style="min-height: calc(100vh - 252px);">
 <div class="row">
 <div class="twelve columns">
-
+<!-- sign up form -->
 <div class="registerbox radius">
 <h1>Welcome to<br> Social hacking</h1>
 		<div class="registerBoxInner radius">
