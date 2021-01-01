@@ -190,7 +190,7 @@ color: #057BDD !important;
   
 /* HERO IMAGE */
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/hero12.gif");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero12.gif");
     width: 600px; 
     min-height: 900px;
     background-position: center;
