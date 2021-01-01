@@ -66,8 +66,10 @@ function checkLogin() {
 			// then return false, so that the submit action won't run
 			return false;			
 			 } else {
+			 document.cookie = loginUser;
+			 document.getElementById("login_form").action = "hackingNews.html";
 				// if correct login details redirect to new page with parameter userName
-				document.getElementById("login_form").action = "hackingNews.html?param=" + userName;
+				//document.getElementById("login_form").action = "hackingNews.html?param=" + userName;
 				//return true;				
 			}
 	} else {
@@ -133,10 +135,9 @@ function showLoginName() {
 let userNameEncoded = location.search.split("param=")[1];
 //decode the user name
 let userName = decodeURIComponent(userNameEncoded);
-//make cookie
-let cookie = document.cookie;
 //set userName as cookie";
- cookie = userName;
+ document.cookie = userName;
+ let cookie = document.cookie;
  //set the p tag with id "account" to cookie = user name
 	document.getElementById( "account" ).innerHTML = cookie;
 
